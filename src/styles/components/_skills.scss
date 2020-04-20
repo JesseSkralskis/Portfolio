@@ -1,0 +1,98 @@
+.skills__container {
+  background: $mywhite;
+
+  height: 78rem;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: [skillsTopMarg] 4rem [skillsHeader] 18rem [skillsPic] 40rem [skillsBelowPic] 2rem [skillsbottemMarg] 12rem [skillsBottomCatch] 1rem [end];
+  grid-template-columns: [skillsLeftMarg] 3rem [skillsColPic] 3fr [skillsDivider] 1fr [skillsText] 4fr [skillsMargRight] 3rem [end];
+}
+.skills__bg-art {
+  grid-column: skillsColPic/skillsMargRight;
+  grid-row: skillsTopMarg/skillsBottomCatch;
+  background: url("/images/curcuit.png");
+  background-size: cover;
+}
+.skills_svg-container {
+  grid-row: skillsTopMarg/end;
+  grid-column: skillsLeftMarg/end;
+  margin-top: auto;
+  z-index: 1;
+}
+.skills__pic-box {
+  z-index: 1;
+  background: white;
+  grid-row: skillsPic;
+  grid-column: skillsColPic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills__pic {
+  height: 90%;
+  width: 90%;
+  background: url("/images/DSC_0763_006the_keeper.JPG");
+  background-size: cover;
+  background-position: 0 0;
+}
+.skills__text-box {
+  background: white;
+  display: flex;
+  grid-row: skillsPic;
+  grid-column: skillsDivider/skillsMargRight;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+  z-index: 1;
+}
+.skills-text {
+  background: $darkestpurp;
+
+  width: 99%;
+  height: 90%;
+
+  p {
+    padding: 3rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.skills__header {
+  z-index: 1;
+  background: transparentize($lightGarfield, 0.4);
+  // background: url("/images/bg.png");
+  // background-size: cover;
+  // background-position: 0 25rem;
+
+  grid-row: skillsHeader;
+  grid-column: skillsColPic/skillsMargRight;
+  display: flex;
+  justify-content: center;
+  h1 {
+    color: $mywhite;
+    font-size: 60px;
+    margin-top: 6rem;
+  }
+}
+// .skills__header-overlay {
+//   background: rgba(152, 41, 118, 0.8);
+//   grid-row: skillsHeader;
+//   grid-column: skillsColPic/skillsMargRight;
+//   z-index: 1;
+// }
+
+.skills__footer {
+  z-index: 1;
+  background: transparentize($lightGarfield, 0.4);
+  grid-row: skillsBelowPic/skillsBottomCatch;
+  grid-column: skillsColPic/skillsMargRight;
+}
+.skills__topsvg {
+  grid-row: skillsTopMarg/end;
+  grid-column: skillsLeftMarg/end;
+  z-index: 2;
+  svg {
+  }
+}

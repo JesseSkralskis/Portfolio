@@ -1,0 +1,77 @@
+.namePage__container {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: [topMarg] 3rem [rowBody] 9fr [catch] 0.5rem [bottomMarg] 0rem;
+  grid-template-columns: [leftMarg] 3rem [colBody] 9fr [rightMarg] 3rem [end];
+}
+
+.namePage__giff {
+  grid-row: rowBody/catch;
+  grid-column: colBody/rightMarg;
+  background: url("https://media.giphy.com/media/Wm9XlKG2xIMiVcH4CP/giphy.gif");
+  background-size: cover;
+  background-position: 0 -50rem;
+
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: "Bangers", cursive;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    height: 15rem;
+
+    color: white;
+    font-size: 100px;
+    z-index: 1;
+  }
+  p {
+    color: white;
+
+    z-index: 1;
+    font-size: 30px;
+    margin-bottom: 10rem;
+    margin-top: 0;
+  }
+}
+.namepage__overlay {
+  grid-row: rowBody/catch;
+  grid-column: colBody/rightMarg;
+  background: rgba(155, 34, 143, 0.5);
+}
+
+.namePage__svg-container {
+  grid-row: rowBody/bottomMarg;
+  grid-column: colBody/rightMarg;
+}
+
+.namepage_svg-container2 {
+  grid-row: rowBody/bottomMarg;
+  grid-column: colBody/rightMarg;
+
+  margin-top: auto;
+  svg {
+    margin: 0;
+  }
+}
+
+.namePage__miniheader {
+  grid-row: topMarg/rowBody;
+  grid-column: leftMarg/end;
+  display: flex;
+  margin-left: 10rem;
+  align-items: center;
+  h1 {
+    // color: #6b2b67;
+    color: #9517e3;
+
+    font-size: 38px;
+    // font-family: "MedievalSharp", cursive;
+    // font-family: "Ribeye Marrow", cursive;
+    // font-family: "Geostar Fill", cursive;
+    font-family: "Bungee Shade", cursive;
+  }
+}

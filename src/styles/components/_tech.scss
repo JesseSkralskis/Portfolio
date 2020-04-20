@@ -1,0 +1,230 @@
+.tech-container {
+  height: 50rem;
+  width: 100vw;
+
+  display: grid;
+  grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+  grid-template-columns: [techLeftMarg] 10% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 10% [end];
+  gap: 2rem;
+}
+
+//card 1
+
+.tech-card1 {
+  box-shadow: 5px 5px 10px grey;
+  display: grid;
+  grid-template-rows: [techPic1] 4.5fr [techSkills1] 5.5fr;
+  grid-template-columns: [techCardBody1] auto [end];
+
+  grid-row: techBody;
+  grid-column: techc1;
+  border: black 1px solid;
+}
+.tech-card1-pic1 {
+  grid-row: techPic1;
+  grid-column: techCardBody1;
+  background: url("/images/frontend.png") -5rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  h2 {
+    margin-top: auto;
+    color: $mywhite;
+
+    height: 3rem;
+    font-size: 30px;
+  }
+}
+.tech-card1-list1 {
+  margin-top: 3px;
+  background: $thelightestpurp;
+  grid-row: techSkills1;
+  grid-column: techCardBody1;
+  display: grid;
+  grid-template-rows: [list1-topMarg] 2rem [list1-1] 2.5fr [list1-2] 2.5fr [list1-3] 2.5fr [list1-4] 2.5fr [list1-bottomMarg] 2rem;
+  grid-template-columns: [listIcon] 2fr [list1Body] 8fr [end];
+}
+
+// first row
+.list1-icon1 {
+  background: $thelightestpurp;
+  grid-row: list1-1;
+  grid-column: listIcon/list1Body;
+  background: url("/images/javascriptIcon.png") no-repeat;
+  background-size: 100%;
+  margin: 7px 7px;
+}
+.list1R1 {
+  grid-row: list1-1;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    margin-left: 3rem;
+    width: 10rem;
+    color: white;
+  }
+}
+//second row
+
+.list1-icon2 {
+  background: $thelightestpurp;
+  grid-row: list1-2;
+  grid-column: listIcon/list1Body;
+  background: url("/images/html.png");
+  background-size: cover;
+  margin: 8px 8px;
+}
+.list1R2 {
+  grid-row: list1-2;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    margin-left: 3rem;
+    width: 10rem;
+    color: white;
+  }
+}
+
+//third row
+
+.list1-icon3 {
+  background: $thelightestpurp;
+  grid-row: list1-3;
+  grid-column: listIcon/list1Body;
+  background: url("/images/reactother.png");
+  background-size: cover;
+  background-position: -1.5rem 0;
+  margin: 7px 7px;
+}
+.list1R3 {
+  grid-row: list1-3;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    margin-left: 3rem;
+    width: 10rem;
+    color: white;
+  }
+}
+
+//fourth row
+
+.list1-icon4 {
+  background: $thelightestpurp;
+  grid-row: list1-4;
+  grid-column: listIcon/list1Body;
+  background: url("/images/css.png");
+  background-size: cover;
+  background-position: 0 0;
+  margin: 3px 3px;
+}
+.list1R4 {
+  grid-row: list1-4;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    margin-left: 3rem;
+    width: 10rem;
+    color: white;
+  }
+}
+
+//card 2
+
+.tech-card2 {
+  box-shadow: 5px 5px 10px grey;
+  display: grid;
+  grid-template-rows: [techPic2] 4.5fr [techSkills2] 5.5fr;
+  grid-template-columns: [techCardBody2] auto [end];
+  grid-row: techBody;
+  grid-column: techc2;
+  border: black 1px solid;
+}
+.tech-card2-pic2 {
+  grid-row: techPic2;
+  grid-column: techCardBody2;
+  background: url("/images/server.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  h2 {
+    margin-top: auto;
+    color: white;
+
+    height: 3rem;
+    font-size: 30px;
+  }
+}
+
+//card 3
+
+.tech-card3 {
+  box-shadow: 5px 5px 10px grey;
+  display: grid;
+  grid-template-rows: [techPic3] 4.5fr [techSkills3] 5.5fr;
+  grid-template-columns: [techCardBody3] auto [end];
+  grid-row: techBody;
+  grid-column: techc3;
+  border: black 1px solid;
+}
+.tech-card3-pic3 {
+  grid-row: techPic3;
+  grid-column: techCardBody3;
+  background: url("/images/database.png") 0 -2rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  h2 {
+    margin-top: auto;
+    color: white;
+
+    height: 3rem;
+    font-size: 30px;
+  }
+}
+
+//card 4
+
+.tech-card4 {
+  box-shadow: 5px 5px 10px grey;
+  display: grid;
+  grid-template-rows: [techPic4] 4.5fr [techSkills4] 5.5fr;
+  grid-template-columns: [techCardBody4] auto [end];
+  grid-row: techBody;
+  grid-column: techc4/techRightMarg;
+  border: black 1px solid;
+}
+
+.tech-card4-pic4 {
+  grid-row: techPic4;
+  grid-column: techCardBody4;
+  background: url("/images/deployment.png") 0 0rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  h2 {
+    z-index: 1;
+    margin-top: auto;
+    color: $mywhite;
+
+    height: 3rem;
+    font-size: 30px;
+  }
+}
+.tech-card4pic4-overlay {
+  grid-row: techPic4;
+  grid-column: techCardBody4;
+  background: transparentize(rgb(0, 0, 84), 0.7);
+}
