@@ -1,0 +1,114 @@
+//card 2
+
+.tech-card2 {
+  box-shadow: 5px 5px 10px grey;
+  display: grid;
+  grid-template-rows: [techPic2] 0.75fr [techSkills2] 3fr;
+  grid-template-columns: [techCardBody2] auto [end];
+  grid-row: techBody;
+  grid-column: techc2;
+  border: black 1px solid;
+}
+.tech-card2-pic2 {
+  grid-row: techPic2;
+  grid-column: techCardBody2;
+  // background: url("/images/server.png") no-repeat;
+  background: $thelightestpurp;
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: white;
+
+    height: 3rem;
+    font-size: 18px;
+  }
+}
+
+//list
+
+.tech-card2-list2 {
+  margin-top: 5px;
+  background: lighten(#d8d0da, 0);
+  grid-row: techSkills2;
+  grid-column: techCardBody2;
+  display: grid;
+  grid-template-rows: [list1-topMarg] 2rem [list1-1] 2.5fr [list1-2] 2.5fr [list1-3] 2.5fr [list1-4] 2.5fr [list1-bottomMarg] 2rem;
+  grid-template-columns: [listIcon] 4fr [list1Body] 8fr [end];
+}
+
+//first row
+
+.list2-icon1 {
+  grid-row: list1-1;
+  grid-column: listIcon/list1Body;
+  background: url("/images/nodey.png") no-repeat -7px 0px;
+  background-size: cover;
+  margin: 0px 10px;
+}
+.list2R1 {
+  grid-row: list1-1;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    font-size: 17px;
+    margin-left: 1rem;
+    width: 10rem;
+    color: white;
+  }
+}
+//second row
+
+.list2-icon2 {
+  // background: $thelightestpurp;
+  grid-row: list1-2;
+  grid-column: listIcon/list1Body;
+  background: url("/images/express.png") -8px;
+  background-size: cover;
+  margin: 10px 12px;
+}
+.list2R2 {
+  grid-row: list1-2;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    font-size: 17px;
+    margin-left: 1rem;
+    width: 10rem;
+    color: white;
+  }
+}
+
+//third row
+
+.list2-icon3 {
+  // background: $thelightestpurp;
+  grid-row: list1-3;
+  grid-column: listIcon/list1Body;
+  background: url("/images/javaa.png") -6px 0px;
+  background-size: cover;
+
+  margin: 0px 13px;
+}
+.list2R3 {
+  grid-row: list1-3;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    font-size: 17px;
+    margin-left: 0.8rem;
+    width: 10rem;
+    color: white;
+  }
+}

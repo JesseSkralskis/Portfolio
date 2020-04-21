@@ -1,0 +1,113 @@
+.tech-card3 {
+  box-shadow: 5px 5px 10px grey;
+  display: grid;
+  grid-template-rows: [techPic3] 0.75fr [techSkills3] 3fr;
+  grid-template-columns: [techCardBody3] auto [end];
+  grid-row: techBody;
+  grid-column: techc3;
+  border: black 1px solid;
+}
+.tech-card3-pic3 {
+  grid-row: techPic3;
+  grid-column: techCardBody3;
+  // background: url("/images/database.png") 0 -2rem;
+  background: $themaroonish;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: white;
+
+    height: 3rem;
+    font-size: 18px;
+  }
+}
+
+//list
+
+.tech-card3-list3 {
+  margin-top: 5px;
+  background: lighten(#d8d0da, 0);
+  grid-row: techSkills3;
+  grid-column: techCardBody3;
+  display: grid;
+  grid-template-rows: [list1-topMarg] 2rem [list1-1] 2.5fr [list1-2] 2.5fr [list1-3] 2.75fr [list1-4] 2.5fr [list1-bottomMarg] 2rem;
+  grid-template-columns: [listIcon] 4fr [list1Body] 8fr [end];
+}
+
+//first row
+
+.list3-icon1 {
+  background: $thelightestpurp;
+  grid-row: list1-1;
+  grid-column: listIcon/list1Body;
+  background: url("/images/mongo.png") no-repeat 0 0px;
+  background-size: cover;
+  margin: 5px 21px;
+}
+.list3R1 {
+  grid-row: list1-1;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    font-size: 17px;
+    margin-left: 1rem;
+    width: 10rem;
+    color: white;
+  }
+}
+//second row
+
+.list3-icon2 {
+  background: $thelightestpurp;
+  grid-row: list1-2;
+  grid-column: listIcon/list1Body;
+  background: url("/images/sql.png");
+  background-size: cover;
+  margin: 5px 19px;
+}
+.list3R2 {
+  grid-row: list1-2;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    font-size: 17px;
+    margin-left: 1rem;
+    width: 10rem;
+    color: white;
+  }
+}
+
+//third row
+
+.list3-icon3 {
+  background: $thelightestpurp;
+  grid-row: list1-3;
+  grid-column: listIcon/list1Body;
+  background: url("/images/fb.png") 0 0;
+  background-size: cover;
+
+  margin: 6px 21px;
+}
+.list3R3 {
+  grid-row: list1-3;
+  grid-column: list1Body;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  h2 {
+    font-size: 17px;
+    margin-left: 1rem;
+    width: 10rem;
+    color: white;
+  }
+}
