@@ -76,12 +76,6 @@
     margin-top: 6rem;
   }
 }
-// .skills__header-overlay {
-//   background: rgba(152, 41, 118, 0.8);
-//   grid-row: skillsHeader;
-//   grid-column: skillsColPic/skillsMargRight;
-//   z-index: 1;
-// }
 
 .skills__footer {
   z-index: 1;
@@ -93,6 +87,4 @@
   grid-row: skillsTopMarg/end;
   grid-column: skillsLeftMarg/end;
   z-index: 2;
-  svg {
-  }
 }
