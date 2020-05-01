@@ -1,3 +1,5 @@
 .app__container {
-  height: 98vh;
+  height: 100vh;
+  overflow-x: hidden;
+  // overflow-y: scroll;
 }

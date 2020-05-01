@@ -1,13 +1,20 @@
 //card 2
 
 .tech-card2 {
-  box-shadow: 5px 5px 10px grey;
+ transition: box-shadow 0.5s;
+  will-change: transform;
+  // box-shadow: 5px 5px 10px grey;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-rows: [techPic2] 0.75fr [techSkills2] 3fr;
   grid-template-columns: [techCardBody2] auto [end];
   grid-row: techBody;
   grid-column: techc2;
   border: black 1px solid;
+}
+
+.tech-card2:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 .tech-card2-pic2 {
   grid-row: techPic2;

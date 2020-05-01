@@ -3,13 +3,64 @@
   width: 100%;
 
   display: grid;
-  grid-template-rows: [topMarg] 3rem [rowBody] 9fr [catch] 0.5rem [bottomMarg] 0rem;
-  grid-template-columns: [leftMarg] 3rem [colBody] 9fr [rightMarg] 3rem [end];
+  grid-template-rows: [topMarg] 3.5% [navBox] 12% [rowBody] 11.5fr[belowName] 12fr [belowIcons] 10fr [belowNav] 1.3fr [catch] 0.5rem [bottomMarg] 0rem;
+  grid-template-columns: [leftMarg] 3rem [toggledNav] 1.5fr [colBody] 7.5fr [oppToggledNav]1.5fr [rightMarg] 3rem [end];
+}
+.namePage__icons-box {
+  grid-row: belowName/belowIcons;
+  grid-column: colBody/oppToggledNav;
+
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+//icons
+
+.namePage__github {
+  color: white;
+}
+
+.namePage__bitBucket {
+  color: white;
+  margin: 0 2%;
+}
+
+.namePage__faceBook {
+  color: white;
+}
+
+.namePage__icon-linkWrapper {
+  grid-row: navBox;
+  grid-column: toggledNav;
+  z-index: 3;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 0%;
+  margin-top: 5%;
+
+  i {
+    color: white;
+  }
+}
+
+.namePage__topRow {
+  grid-row: navBox;
+  grid-column: toggledNav/rightMarg;
+  z-index: 1;
+  display: flex;
 }
 
 .namePage__giff {
-  grid-row: rowBody/catch;
-  grid-column: colBody/rightMarg;
+  border: black solid 1px;
+  grid-row: navBox/catch;
+  grid-column: toggledNav/rightMarg;
   background: url("https://media.giphy.com/media/Wm9XlKG2xIMiVcH4CP/giphy.gif");
   background-size: cover;
   background-position: 0 -50rem;
@@ -38,19 +89,19 @@
   }
 }
 .namepage__overlay {
-  grid-row: rowBody/catch;
-  grid-column: colBody/rightMarg;
+  grid-row: navBox/catch;
+  grid-column: toggledNav/rightMarg;
   background: rgba(155, 34, 143, 0.5);
 }
 
 .namePage__svg-container {
-  grid-row: rowBody/bottomMarg;
+  grid-row: navBox/bottomMarg;
   grid-column: colBody/rightMarg;
 }
 
 .namepage_svg-container2 {
   grid-row: rowBody/bottomMarg;
-  grid-column: colBody/rightMarg;
+  grid-column: toggledNav/rightMarg;
 
   margin-top: auto;
   svg {

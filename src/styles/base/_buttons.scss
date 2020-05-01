@@ -1,0 +1,31 @@
+.buttons {
+  width: 10rem;
+  height: 70%;
+  background: $darkestpurp;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: black solid 1px;
+  font-weight: 600;
+}
+
+.buttons--ul {
+  background: $darkestpurp;
+}
+
+.buttons--ur {
+  background: $thelightestpurp;
+}
+.buttons--ll {
+  background: $lightGarfield;
+}
+.buttons--lr {
+  background: $themaroonish;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+}

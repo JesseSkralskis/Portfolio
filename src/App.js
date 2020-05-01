@@ -1,17 +1,17 @@
-import React from "react";
-import Tech from "./components/Tech";
-import "./styles/styles.scss";
-import NamePage from "./components/NamePage";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import React, { useRef } from "react";
 
-const App = () => (
-  <div className="app__container">
-    <NamePage />
-    <Skills />
-    <Tech />
-    <Projects />
-  </div>
-);
+import "./styles/styles.scss";
+
+import AppRouter from "./routes/AppRouter";
+import gsap from "gsap";
+
+
+const App = () => {
+  return (
+    <div>
+      <AppRouter />
+    </div>
+  );
+};
 
 export default App;
