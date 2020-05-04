@@ -57,8 +57,8 @@
   padding-left: 5%;
   p {
     font-weight: 600;
-    color: $thelightestpurp;
-    font-size: 15px;
+    color: black;
+    font-size: 16px;
   }
 }
 
@@ -85,7 +85,17 @@
   grid-row: lr_buttons/end;
   grid-column: lr_left/lr_right;
 
-  z-index: 3;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.proj__lr-repo {
+  grid-row: lr_buttons/end;
+  grid-column: lr_left/end;
+  z-index: 4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,8 +105,60 @@
   grid-row: lr_buttons/end;
   grid-column: lr_right;
 
-  z-index: 3;
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10%;
+}
+.proj__lr-readMore-afterclick {
+  grid-row: lr_header/end;
+  grid-column: lr_left/end;
+
+  background: $themaroonish;
+  background-size: cover;
+  z-index: 4;
+  opacity: 0;
+
+  display: grid;
+  grid-template-rows: [lr_ac_header] 1fr [lr_acbody] 3fr [end];
+  grid-template-columns: [lr_ac_main] auto;
+}
+
+.proj__lr-ac-header {
+  grid-row: lr_ac_header/lr_acbody;
+  grid-column: lr_ac_main;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 25px;
+    margin-left: 7%;
+    color: white;
+    display: inline-block;
+  }
+}
+
+.proj__lr-ac-text {
+  grid-row: lr_acbody/end;
+  grid-column: lr_ac_main;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj__lr-ac-text-box {
+  margin-left: 3%;
+  max-height: 25rem;
+  width: 93%;
+
+  color: white;
+  overflow-y: scroll;
+
+  p {
+    font-size: 17px;
+  }
 }

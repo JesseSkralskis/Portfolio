@@ -93,7 +93,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 5;
+  margin-right: 10%;
+}
+.proj__ul-repo {
+  grid-row: ul_buttons/end;
+  grid-column: ul_left/end;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .proj__ul-readMore {
@@ -103,7 +112,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 4;
+  z-index: 5;
+  margin-left: 10%;
 }
 
 .proj__ul-readMore-afterclick {
@@ -115,17 +125,47 @@
   z-index: 4;
   opacity: 0;
 
-  // display: grid;
-  // grid-template-rows: [ul_ac_header] 1fr [ul_acbody] 6fr [end];
-  // grid-template-columns: [ul_ac_main] auto;
-
-  button {
-    z-index: 6;
-  }
+  display: grid;
+  grid-template-rows: [ul_ac_header] 1fr [ul_acbody] 3fr [end];
+  grid-template-columns: [ul_ac_main] auto;
 }
 
 .proj__ul-ac-header {
-  grid-row: ul_header;
-  grid-column: ul_left;
-  border: black 2px solid;
+  grid-row: ul_ac_header/ul_acbody;
+  grid-column: ul_ac_main;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    z-index: 1;
+  }
+  h1 {
+    font-size: 25px;
+    margin-left: 7%;
+    color: white;
+    display: inline-block;
+  }
+}
+
+.proj__ul-ac-text {
+  grid-row: ul_acbody/end;
+  grid-column: ul_ac_main;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj__ul-ac-text-box {
+  margin-left: 3%;
+  max-height: 25rem;
+  width: 93%;
+
+  color: white;
+  overflow-y: scroll;
+
+  p {
+    font-size: 17px;
+  }
 }

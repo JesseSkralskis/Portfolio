@@ -34,7 +34,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills__header">
-        <h1 id="about">About Me</h1>
+        <h1 id="about">ABOUT ME</h1>
       </div>
       <div className="skills__footer"></div>
       <div className="skills_svg-container">

@@ -15,6 +15,7 @@
   height: 90%;
   width: 100%;
   background: white;
+  z-index: 1;
 
   display: grid;
   grid-template-rows: [ll_header] 2fr [ll_body] 4fr[ll_buttons] 1fr [end];
@@ -56,8 +57,8 @@
   padding-left: 5%;
   p {
     font-weight: 600;
-    color: $lightGarfield;
-    font-size: 15px;
+    color: black;
+    font-size: 16px;
   }
 }
 
@@ -84,7 +85,16 @@
   grid-row: ll_buttons/end;
   grid-column: ll_left/ll_right;
 
-  z-index: 3;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+.proj__ll-repo {
+  grid-row: ll_buttons/end;
+  grid-column: ll_left/end;
+  z-index: 4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,8 +104,61 @@
   grid-row: ll_buttons/end;
   grid-column: ll_right;
 
-  z-index: 3;
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10%;
+}
+
+.proj__ll-readMore-afterclick {
+  grid-row: ll_header/end;
+  grid-column: ll_left/end;
+
+  background: $lightGarfield;
+  background-size: cover;
+  z-index: 4;
+  opacity: 0;
+
+  display: grid;
+  grid-template-rows: [ll_ac_header] 1fr [ll_acbody] 3fr [end];
+  grid-template-columns: [ll_ac_main] auto;
+}
+
+.proj__ll-ac-header {
+  grid-row: ll_ac_header/ll_acbody;
+  grid-column: ll_ac_main;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 25px;
+    margin-left: 7%;
+    color: white;
+    display: inline-block;
+  }
+}
+
+.proj__ll-ac-text {
+  grid-row: ll_acbody/end;
+  grid-column: ll_ac_main;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj__ll-ac-text-box {
+  margin-left: 3%;
+  max-height: 25rem;
+  width: 93%;
+
+  color: white;
+  overflow-y: scroll;
+
+  p {
+    font-size: 17px;
+  }
 }

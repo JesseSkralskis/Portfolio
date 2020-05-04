@@ -1,3 +1,31 @@
+.buttons__ac {
+  z-index: 4;
+  width: 5%;
+  height: 2.5rem;
+  z-index: 6;
+  background: white;
+  color: $darkestpurp;
+  margin-right: 2%;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  &:focus {
+    background: white;
+  }
+}
+
+.buttons__ac--ur {
+  color: $thelightestpurp;
+}
+
+.buttons__ac--ll {
+  color: $lightGarfield;
+}
+
+.buttons__ac--lr {
+  color: $themaroonish;
+}
+
 .buttons {
   width: 10rem;
   height: 70%;
