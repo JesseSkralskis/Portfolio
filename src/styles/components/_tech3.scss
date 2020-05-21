@@ -6,8 +6,8 @@
   display: grid;
   grid-template-rows: [techPic3] 0.75fr [techSkills3] 3fr;
   grid-template-columns: [techCardBody3] auto [end];
-  grid-row: techBody;
-  grid-column: techc3;
+  // grid-row: techBody;
+  // grid-column: techc3;
   border: black 1px solid;
 }
 .tech-card3:hover {
@@ -28,6 +28,9 @@
 
     height: 3rem;
     font-size: 18px;
+    @media (min-width: 1920px) {
+      font-size: 27px;
+    }
   }
 }
 

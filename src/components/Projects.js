@@ -11,7 +11,7 @@ export default function Projects() {
   const sectionRef2 = useRef(null);
   const intersection = useIntersection(sectionRef, {
     root: null,
-    rootMargin: "150px",
+    rootMargin: "0px",
     threshhold: 9
   });
   const intersection2 = useIntersection(sectionRef2, {
@@ -93,7 +93,7 @@ export default function Projects() {
     });
 
     // console.log(intersection);
-    console.log(intersection.intersectionRatio);
+    console.log(intersection);
   };
 
   const fadeOut2 = element => {
@@ -118,6 +118,7 @@ export default function Projects() {
       duration: 0.75
       // rotate: -180,
     });
+
     console.log(intersection2.intersectionRatio);
   };
 
@@ -134,13 +135,16 @@ export default function Projects() {
       <div className="projects__header">
         <h1>MY WORK</h1>
       </div>
-      <div ref={sectionRef} className="projects__divider"></div>
+      <div className="projects__divider"></div>
 
-      <ProjectsUL />
-      <ProjectsUR />
-
-      <ProjectsLL />
-      <ProjectsLR />
+      <div ref={sectionRef} className="projects__upper-row">
+        <ProjectsUL />
+        <ProjectsUR />
+      </div>
+      <div className="projects__lower-row">
+        <ProjectsLL />
+        <ProjectsLR />
+      </div>
 
       <div className="projects__bg-art"></div>
       <div className="projects__bg"></div>

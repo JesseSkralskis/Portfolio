@@ -12,42 +12,52 @@ export default function NamePage({ scroll }) {
 
   return (
     <div className="namePage__container">
-      <div className="namePage__icons-box">
-        <div className="namePage__github">
-          <a
-            style={{
-              textDecoration: "none",
-              color: "white"
-            }}
-            href="https://github.com/jester1976"
-          >
-            <i class="fab fa-github fa-4x"></i>
-          </a>
+      <div className="namePage__content-wrapper">
+        <div className="namePage__content-name">
+          <h1>Jesse Skralskis</h1>
         </div>
-        <div className="namePage__bitBucket">
-          <a
-            style={{
-              textDecoration: "none",
-              color: "white"
-            }}
-            href="https://bitbucket.org/dashboard/repositories"
-          >
-            <i class="fab fa-bitbucket fa-4x"></i>
-          </a>
+        <div className="namePage__content-description">
+          <p>full stack web developer</p>
         </div>
-        <div className="namePage__faceBook">
-          <a
-            href="https://www.facebook.com/jesse.james.3133719"
-            style={{
-              textDecoration: "none",
-              color: "white"
-            }}
-          >
-            {" "}
-            <i class="fab fa-facebook fa-4x"></i>
-          </a>
+
+        <div className="namePage__icons-box">
+          <div className="namePage__github">
+            <a
+              style={{
+                textDecoration: "none",
+                color: "white"
+              }}
+              href="https://github.com/jester1976"
+            >
+              <i className="fab fa-github fa-4x"></i>
+            </a>
+          </div>
+          <div className="namePage__bitBucket">
+            <a
+              style={{
+                textDecoration: "none",
+                color: "white"
+              }}
+              href="https://bitbucket.org/dashboard/repositories"
+            >
+              <i class="fab fa-bitbucket fa-4x"></i>
+            </a>
+          </div>
+          <div className="namePage__faceBook">
+            <a
+              href="https://www.facebook.com/jesse.james.3133719"
+              style={{
+                textDecoration: "none",
+                color: "white"
+              }}
+            >
+              {" "}
+              <i class="fab fa-facebook fa-4x"></i>
+            </a>
+          </div>
         </div>
       </div>
+
       <div className="namePage__icon-linkWrapper">
         <Link
           onClick={() => toggleHandler()}
@@ -59,11 +69,7 @@ export default function NamePage({ scroll }) {
       </div>
 
       <Nav toggled={isToggled} toggled={isToggled} />
-      <div className="namePage__giff">
-        <h1>Jesse Skralskis</h1>
-
-        <p>full stack web developer</p>
-      </div>
+      <div className="namePage__giff"></div>
       <div className="namepage__overlay"> </div>
 
       <div className="namepage_svg-container2">

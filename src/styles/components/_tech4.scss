@@ -8,8 +8,8 @@
   display: grid;
   grid-template-rows: [techPic4] 0.75fr [techSkills4] 3fr;
   grid-template-columns: [techCardBody4] auto [end];
-  grid-row: techBody;
-  grid-column: techc4/techRightMarg;
+  // grid-row: techBody;
+  // grid-column: techc4/techRightMarg;
   border: black 1px solid;
 }
 .tech-card4:hover {
@@ -29,6 +29,9 @@
     color: $mywhite;
 
     height: 3rem;
+    @media (min-width: 1920px) {
+      font-size: 27px;
+    }
   }
 }
 

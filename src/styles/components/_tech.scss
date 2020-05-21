@@ -5,7 +5,89 @@
   display: grid;
   grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
   grid-template-columns: [techLeftMarg] 10% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 10% [end];
-  gap: 2rem;
+
+  @media (min-width: 320px) {
+    height: 140rem;
+    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    grid-template-columns: [techLeftMarg] 8% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 8% [end];
+  }
+
+  @media (min-width: 360px) {
+    height: 140rem;
+    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    grid-template-columns: [techLeftMarg] 12% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 12% [end];
+  }
+
+  @media (min-width: 400px) {
+    height: 140rem;
+    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    grid-template-columns: [techLeftMarg] 17% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 17% [end];
+  }
+
+  @media (min-width: 768px) {
+    height: 70rem;
+
+    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    grid-template-columns: [techLeftMarg] 12% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 12% [end];
+  }
+
+  @media (min-width: 1020px) {
+    height: 35rem;
+
+    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    grid-template-columns: [techLeftMarg] 2% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 2% [end];
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    grid-template-columns: [techLeftMarg] 5% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 5% [end];
+  }
+
+  @media (min-width: 1400px) {
+    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    grid-template-columns: [techLeftMarg] 9% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 9% [end];
+  }
+
+  @media (min-width: 1900px) {
+    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    grid-template-columns: [techLeftMarg] 15% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 15% [end];
+  }
+}
+
+.tech-interior-container {
+  grid-row: teckBody;
+  grid-column: techc1/techRightMarg;
+
+  display: grid;
+
+  @media (min-width: 320px) {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem;
+  }
+  @media (min-width: 1020px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5rem;
+  }
+
+  @media (min-width: 1900px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8rem;
+  }
 }
 
 //card 1
@@ -19,8 +101,8 @@
   grid-template-rows: [techPic1] 0.75fr [techSkills1] 3fr;
   grid-template-columns: [techCardBody1] auto [end];
 
-  grid-row: techBody;
-  grid-column: techc1;
+  // grid-row: techBody;
+  // grid-column: techc1;
   border: black 1px solid;
 }
 .tech-card1:hover {
@@ -30,7 +112,7 @@
 .tech-card1-pic1 {
   grid-row: techPic1;
   grid-column: techCardBody1;
-  // background: url("/images/frontend.png") -5rem;
+
   background: $darkestpurp;
   background-size: cover;
   display: flex;

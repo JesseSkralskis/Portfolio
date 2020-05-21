@@ -5,14 +5,15 @@ import SkillsCard3 from "./SkillsCard3";
 import SkillsCard4 from "./SkillsCard4";
 
 export default function Technologies() {
-
-  
   return (
     <div className="tech-container">
-      <SkillsCard1  />
-      <SkillsCard2  />
-      <SkillsCard3  />
-      <SkillsCard4  />
+      <div className="tech-interior-container">
+        <SkillsCard1 />
+
+        <SkillsCard2 />
+        <SkillsCard3 />
+        <SkillsCard4 />
+      </div>
     </div>
   );
 }
