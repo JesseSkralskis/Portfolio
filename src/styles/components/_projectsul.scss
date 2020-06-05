@@ -31,7 +31,7 @@
     margin-top: 0;
     height: 90%;
     margin: auto 0;
-    grid-template-rows: [ul_header] 2fr [ul_body] 4fr [ul_buttons] 1fr [end];
+    grid-template-rows: [ul_header] 2fr [ul_body] 6fr [ul_buttons] 1fr [end];
     grid-template-columns: [ul_left] 1fr [ul_right] 1fr [end];
   }
 }

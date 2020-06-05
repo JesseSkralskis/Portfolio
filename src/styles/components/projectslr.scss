@@ -26,7 +26,7 @@
     margin-top: 0;
     height: 90%;
     margin: auto 0;
-    grid-template-rows: [lr_header] 2fr [lr_body] 4fr [lr_buttons] 1fr [end];
+    grid-template-rows: [lr_header] 2fr [lr_body] 6fr [lr_buttons] 1fr [end];
     grid-template-columns: [lr_left] 1fr [lr_right] 1fr [end];
   }
 }
@@ -175,7 +175,7 @@
   }
 }
 .proj__spot-photo {
-  background: url("/images/dummy2.png");
+  background: url("/images/vibes.png");
   width: 93%;
   height: 80%;
 

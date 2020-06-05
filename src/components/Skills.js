@@ -18,19 +18,32 @@ export default function Skills() {
         </div>
         <div className="skills__text-box">
           <div className="skills-text">
+            <h1>
+              Full stack developer specializing in React and Javascript with
+              unique perspective from diverse industry settings
+            </h1>
+            <hr />
             <p>
-              {" "}
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-              incidunt in officiis porro reiciendis sed ea. Voluptate placeat at
-              libero quam ipsam perferendis excepturi quos. Dolores animi
-              officiis adipisci placeat! Rerum consequatur iure sapiente
-              aspernatur magni at eligendi ratione ipsam nobis animi, quia
-              maxime eius sit quam totam quis, molestias nisi exercitationem
-              inventore consequuntur ad voluptatem a nam. Odit, fugit? Corporis
-              atque temporibus nostrum praesentium qui id accusamus perferendis
-              natus, quod, veniam explicabo sequi voluptate consequuntur fugiat
-              obcaecati, quos est vero delectus omnis reiciendis iste. Nihil
-              tempora iste necessitatibus unde!{" "}
+              My fascination with computers and programming began at a young
+              age. I remember as a boy, typing hundreds of lines of code into my
+              friend’s Commodore 64 to get a simple box to move across the
+              screen. This excitement for coding became fully realized when I
+              studied Information Technology at the University of Auckland. I
+              have always been passionate about problem solving, and this led me
+              down a path of diverse academic and professional disciplines prior
+              to becoming a developer. I initially pursued my love of music
+              production in obtaining an AA degree in sound engineering. I
+              mastered technologies including sound engineering software and the
+              operation of external sound boards. This translated to my adept
+              ability at learning computer coding languages quickly. I also
+              spent 6 years working in the exterior crew in the yachting
+              industry. That profession required a tireless work ethic, a
+              focused attention to detail, an ability to work efficiently under
+              pressure, as well as excellent communication to ensure customer
+              satisfaction. I’ve applied these same characteristics to my work
+              as a developer. I am looking to partner with clients and teams who
+              have similar values of strong work ethic and dynamic problem
+              solving.
             </p>
           </div>
         </div>

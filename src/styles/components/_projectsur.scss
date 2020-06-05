@@ -25,7 +25,7 @@
     margin-top: 0;
     height: 90%;
     margin: auto 0;
-    grid-template-rows: [ur_header] 2fr [ur_body] 4fr [ur_buttons] 1fr [end];
+    grid-template-rows: [ur_header] 2fr [ur_body] 6fr [ur_buttons] 1fr [end];
     grid-template-columns: [ur_left] 1fr [ur_right] 1fr [end];
   }
 }
@@ -171,7 +171,7 @@
   }
 }
 .proj__blog-photo {
-  background: url("/images/dummy2.png");
+  background: url("/images/Pathways.png");
   width: 93%;
   height: 80%;
 
@@ -180,31 +180,31 @@
   border: black 1px solid;
   @media (min-width: 320px) {
     height: 90%;
-    background-position: -6.5rem 0;
+    background-position: -8rem 0;
   }
 
   @media (min-width: 360px) {
     height: 90%;
-    background-position: -4.5rem 0;
+    background-position: -5.5rem 0;
   }
   @media (min-width: 400px) {
     height: 90%;
-    background-position: -2rem 0;
+    background-position: -4rem 0;
   }
 
   @media (min-width: 768px) {
     height: 90%;
-    background-position: -8.5rem 0;
+    background-position: -11rem 0;
   }
 
   @media (min-width: 1280px) {
     height: 80%;
-    background-position: -6.5rem 0;
+    background-position: -7rem 0;
   }
 
   @media (min-width: 1440px) {
     height: 80%;
-    background-position: -5rem 0;
+    background-position: -5.5rem 0;
   }
 
   @media (min-width: 1920px) {
