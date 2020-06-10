@@ -7,24 +7,79 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 
 export default function Nav({ toggled }) {
+  const scrollBasedOnwidth = () => {
+    if (window.innerWidth <= 414) {
+      return {
+        about: 600,
+        skills: 1310,
+        projects: 2800
+      };
+    }
+    if (window.innerWidth <= 768) {
+      return {
+        about: 1100,
+        skills: 2200,
+        projects: 3100
+      };
+    }
+    if (window.innerWidth <= 1024) {
+      return {
+        about: 1100,
+        skills: 1900,
+        projects: 2500
+      };
+    }
+    if (window.innerWidth <= 1280) {
+      return {
+        about: 850,
+        skills: 1500,
+        projects: 2100
+      };
+    }
+
+    if (window.innerWidth <= 1280) {
+      return {
+        about: 850,
+        skills: 1500,
+        projects: 2100
+      };
+    }
+    if (window.innerWidth <= 1440) {
+      return {
+        about: 920,
+        skills: 1570,
+        projects: 2170
+      };
+    }
+
+    if (window.innerWidth <= 4000) {
+      return {
+        about: 1100,
+        skills: 1770,
+        projects: 2370
+      };
+    }
+  };
+
+  console.log(window.innerWidth + "@@@@@@@@@@" + window.innerHeight);
   const handleAboutClick = () => {
     gsap.to(".app__container", {
       duration: 1.5,
-      scrollTo: 755,
+      scrollTo: scrollBasedOnwidth().about,
       ease: "power2"
     });
   };
   const handleTechClick = () => {
     gsap.to(".app__container", {
       duration: 1.5,
-      scrollTo: 1310,
+      scrollTo: scrollBasedOnwidth().skills,
       ease: "power2"
     });
   };
   const handleProjectsClick = () => {
     gsap.to(".app__container", {
       duration: 1.5,
-      scrollTo: 2050,
+      scrollTo: scrollBasedOnwidth().projects,
       autoKill: false
       //   ease: "power2"
     });

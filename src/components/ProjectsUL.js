@@ -142,7 +142,11 @@ export default function ProjectsUL() {
       <div className="proj__ul-buttons-container">
         <div className="proj__ul-link">
           {!isClicked && (
-            <a href="https://jessehaven.netlify.app" target="_blank">
+            <a
+              className="link"
+              href="https://jessehaven.netlify.app"
+              target="_blank"
+            >
               {" "}
               <button className="buttons buttons--ul">To Site</button>
             </a>

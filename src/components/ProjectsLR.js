@@ -119,7 +119,11 @@ export default function ProjectsLR() {
       <div className="proj__lr-buttons-container">
         <div className="proj__lr-link">
           {!isClicked && (
-            <a href="https://silly-wescoff-4d18fa.netlify.app">
+            <a
+              
+              className="link"
+              href="https://silly-wescoff-4d18fa.netlify.app"
+            >
               {" "}
               <button className="buttons buttons--lr">To Site</button>
             </a>

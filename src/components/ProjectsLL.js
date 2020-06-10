@@ -146,7 +146,11 @@ export default function ProjectsLL() {
       <div className="proj__ll-buttons-container">
         <div className="proj__ll-link">
           {!isClicked && (
-            <a target="_blank" href="https://upbeat-bardeen-c5aa6c.netlify.app">
+            <a
+              className="link"
+              target="_blank"
+              href="https://upbeat-bardeen-c5aa6c.netlify.app"
+            >
               {" "}
               <button className="buttons buttons--ll">To Site</button>
             </a>

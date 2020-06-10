@@ -125,6 +125,7 @@ export default function ProjectsUR() {
         <div className="proj__ur-link">
           {!isClickedUR && (
             <a
+              className="link"
               href="https://app.netlify.com/sites/angry-villani-25c06d/overview"
               target="_blank"
             >

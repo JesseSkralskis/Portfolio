@@ -9,6 +9,7 @@ import gsap from "gsap";
 export default function Projects() {
   const sectionRef = useRef(null);
   const sectionRef2 = useRef(null);
+  
   const intersection = useIntersection(sectionRef, {
     root: null,
     rootMargin: "0px",
@@ -16,7 +17,7 @@ export default function Projects() {
   });
   const intersection2 = useIntersection(sectionRef2, {
     root: null,
-    rootMargin: "50px",
+    rootMargin: "0px",
     threshhold: 9
   });
 
@@ -93,7 +94,6 @@ export default function Projects() {
     });
 
     // console.log(intersection);
-    console.log(intersection);
   };
 
   const fadeOut2 = element => {
@@ -118,8 +118,6 @@ export default function Projects() {
       duration: 0.75
       // rotate: -180,
     });
-
-    console.log(intersection2.intersectionRatio);
   };
 
   intersection2 && intersection2.intersectionRatio < 0.00001
@@ -141,7 +139,7 @@ export default function Projects() {
         <ProjectsUL />
         <ProjectsUR />
       </div>
-      <div className="projects__lower-row">
+      <div ref={sectionRef2} className="projects__lower-row">
         <ProjectsLL />
         <ProjectsLR />
       </div>
@@ -157,7 +155,7 @@ export default function Projects() {
           ></path>
         </svg>
       </div>
-      <div ref={sectionRef2} className="proj_bottom-svg-container">
+      <div className="proj_bottom-svg-container">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#fff"

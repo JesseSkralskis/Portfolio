@@ -27,7 +27,8 @@ export default function NamePage({ scroll }) {
                 textDecoration: "none",
                 color: "white"
               }}
-              href="https://github.com/jester1976"
+              href="https://github.com/JesseSkralskis"
+              target="blank_"
             >
               <i className="fab fa-github fa-4x"></i>
             </a>

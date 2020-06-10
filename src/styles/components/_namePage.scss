@@ -92,7 +92,11 @@
   }
 
   @media (min-width: 1024px) {
-    background-position: 0 -6rem;
+    background-position: 0 -0rem;
+  }
+
+  @media (min-width: 1280px) {
+    background-position: 0 -30rem;
   }
 
   @media (min-width: 1440px) {

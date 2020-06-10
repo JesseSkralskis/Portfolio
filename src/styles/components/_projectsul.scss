@@ -135,24 +135,21 @@
   justify-content: center;
   align-items: center;
   background: lighten(#d8d0da, 0);
-  // padding-right: 1rem;
+
   @media (min-width: 320px) {
     height: 23rem;
   }
 
   @media (min-width: 768px) {
-    // border: green 2px solid;
     height: 32rem;
   }
 
   @media (min-width: 768px) {
-    // border: green 2px solid;
     height: 28rem;
     margin: 0;
   }
 
   @media (min-width: 1280px) {
-    // border: green 2px solid;
     height: 100%;
   }
 }
