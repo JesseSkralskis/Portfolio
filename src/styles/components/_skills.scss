@@ -94,7 +94,7 @@
   box-shadow: 5px 5px 10px grey;
 
   width: 100%;
-  background: url("/images/DSC_0763_006the_keeper.JPG");
+  background: url("/images/headShot.jpeg");
   background-size: cover;
   background-position: 0 0;
   @media (min-width: 320px) {
@@ -104,6 +104,7 @@
 
   @media (min-width: 1024px) {
     height: 93%;
+    background-position: 0rem -4rem;
   }
 }
 .skills__text-box {
