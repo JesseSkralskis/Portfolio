@@ -33,7 +33,7 @@ export default function NamePage({ scroll }) {
               <i className="fab fa-github fa-4x"></i>
             </a>
           </div>
-          <div className="namePage__bitBucket">
+          {/* <div className="namePage__bitBucket">
             <a
               style={{
                 textDecoration: "none",
@@ -56,7 +56,7 @@ export default function NamePage({ scroll }) {
               <i class="fab fa-facebook fa-4x"></i>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="namePage__icon-linkWrapper">
