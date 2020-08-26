@@ -1,13 +1,53 @@
-import React, { useState } from "react";
-import Nav from "./Nav";
-import { Link } from "react-router-dom";
+import React from "react";
 
-export default function NamePage({ scroll }) {
-  const [isToggled, setIsToggled] = useState(false);
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-  const toggleHandler = () => {
-    console.log("clicked");
-    setIsToggled(!isToggled);
+gsap.registerPlugin(ScrollToPlugin);
+
+export default function NamePage() {
+  const handleScroll = () => {
+    gsap.to(".app__container", {
+      duration: 1.5,
+      scrollTo: scrollBasedOnwidth().projects,
+      autoKill: false
+      //   ease: "power2"
+    });
+  };
+
+  const scrollBasedOnwidth = () => {
+    if (window.innerWidth <= 414) {
+      return {
+        projects: 2800
+      };
+    }
+    if (window.innerWidth <= 768) {
+      return {
+        projects: 3300
+      };
+    }
+    if (window.innerWidth <= 1024) {
+      return {
+        projects: 3700
+      };
+    }
+    if (window.innerWidth <= 1280) {
+      return {
+        projects: 3760
+      };
+    }
+
+    if (window.innerWidth <= 1440) {
+      return {
+        projects: 3150
+      };
+    }
+
+    if (window.innerWidth <= 4000) {
+      return {
+        projects: 3800
+      };
+    }
   };
 
   return (
@@ -29,37 +69,21 @@ export default function NamePage({ scroll }) {
               }}
               href="https://github.com/JesseSkralskis"
               target="blank_"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-github fa-4x"></i>
             </a>
           </div>
-          {/* <div className="namePage__bitBucket">
-            <a
-              style={{
-                textDecoration: "none",
-                color: "white"
-              }}
-              href="https://bitbucket.org/dashboard/repositories"
-            >
-              <i class="fab fa-bitbucket fa-4x"></i>
-            </a>
+          <div className="namePage__scrollTo">
+            <button onClick={() => handleScroll()}>
+              <i className="fas fa-arrow-circle-down"></i>{" "}
+              <span>See projects</span>
+            </button>
           </div>
-          <div className="namePage__faceBook">
-            <a
-              href="https://www.facebook.com/jesse.james.3133719"
-              style={{
-                textDecoration: "none",
-                color: "white"
-              }}
-            >
-              {" "}
-              <i class="fab fa-facebook fa-4x"></i>
-            </a>
-          </div>
-        </div> */}
+        </div>
       </div>
 
-      <div className="namePage__icon-linkWrapper">
+      {/* <div className="namePage__icon-linkWrapper">
         <Link
           onClick={() => toggleHandler()}
           to={"#"}
@@ -67,21 +91,10 @@ export default function NamePage({ scroll }) {
         >
           <i className="fas fa-bars fa-4x"></i>
         </Link>
-      </div>
+      </div> */}
 
-      <Nav toggled={isToggled} toggled={isToggled} />
       <div className="namePage__giff"></div>
       <div className="namepage__overlay"> </div>
-
-      <div className="namepage_svg-container2">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#fff"
-            fillOpacity="1"
-            d="M0,300L1440,256L1440,320L0,320Z"
-          ></path>
-        </svg>
-      </div>
     </div>
   );
 }

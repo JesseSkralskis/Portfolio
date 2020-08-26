@@ -1,98 +1,119 @@
 .tech-container {
   height: 40rem;
   width: 100vw;
+  background: lighten(#f3f3f1, 2);
 
   display: grid;
-  grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+  grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 1fr [end];
   grid-template-columns: [techLeftMarg] 10% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 10% [end];
 
   @media (min-width: 320px) {
-    height: 140rem;
-    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
-    grid-template-columns: [techLeftMarg] 8% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 8% [end];
-  }
-
-  @media (min-width: 360px) {
-    height: 140rem;
-    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
-    grid-template-columns: [techLeftMarg] 12% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 12% [end];
-  }
-
-  @media (min-width: 400px) {
-    height: 140rem;
-    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
-    grid-template-columns: [techLeftMarg] 17% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 17% [end];
-  }
-
-  @media (min-width: 768px) {
-    height: 70rem;
-
-    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
-    grid-template-columns: [techLeftMarg] 12% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 12% [end];
-  }
-
-  @media (min-width: 1020px) {
-    height: 35rem;
-
-    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
-    grid-template-columns: [techLeftMarg] 2% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 2% [end];
-  }
-
-  @media (min-width: 1280px) {
-    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
+    height: 150rem;
+    grid-template-rows: [techTopMarg] 20rem [techBody] 120rem [techBottomMarg] 10rem [end];
     grid-template-columns: [techLeftMarg] 5% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 5% [end];
   }
 
-  @media (min-width: 1400px) {
-    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
-    grid-template-columns: [techLeftMarg] 9% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 9% [end];
+  @media (min-width: 360px) {
+    height: 150rem;
+    grid-template-rows: [techTopMarg] 20rem [techBody] 120rem [techBottomMarg] 10rem [end];
+    grid-template-columns: [techLeftMarg] 5% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 5% [end];
   }
 
-  @media (min-width: 1900px) {
-    grid-template-rows: [techTopMarg] 0 [techBody] 8fr [techBottomMarg] 2fr [end];
-    grid-template-columns: [techLeftMarg] 15% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 15% [end];
+  @media (min-width: 768px) {
+    height: 125rem;
+    grid-template-rows: [techTopMarg] 35rem [techBody] 80rem [techBottomMarg] 10rem [end];
+    grid-template-columns: [techLeftMarg] 5% [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 5% [end];
+  }
+
+  @media (min-width: 1024px) {
+    height: 130rem;
+    grid-template-rows: [techTopMarg] 30% [techBody] 65% [techBottomMarg] 5% [end];
+    grid-template-columns: [techLeftMarg] 8.5rem [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 8.5rem [end];
+  }
+
+  @media (min-width: 1280px) {
+    height: 160rem;
+    grid-template-rows: [techTopMarg] 40rem [techBody] 100rem [techBottomMarg] 10rem [end];
+    grid-template-columns: [techLeftMarg] 0 [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 0 [end];
+  }
+
+  @media (min-width: 1400px) {
+    height: 100rem;
+    grid-template-rows: [techTopMarg] 45rem [techBody] 38rem [techBottomMarg] 33rem [end];
+    grid-template-columns: [techLeftMarg] 8.5rem [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 8.5rem [end];
+  }
+  @media (min-width: 1600px) {
+    height: 125rem;
+    grid-template-rows: [techTopMarg] 55rem [techBody] 50rem [techBottomMarg] 33rem [end];
+    grid-template-columns: [techLeftMarg] 8.5rem [techc1] 2.5fr [techc2] 2.5fr [techc3] 2.5fr [techc4] 2.5fr [techRightMarg] 8.5rem [end];
   }
 }
 
 .tech-interior-container {
-  grid-row: teckBody;
+  grid-row: techBody;
   grid-column: techc1/techRightMarg;
 
   display: grid;
+  font-family: "medium";
 
   @media (min-width: 320px) {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 3rem;
+
+    grid-column: techLeftMarg/end;
+    margin: 0 0%;
+    padding: 0 5rem;
+  }
+  @media (min-width: 360px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+
+    grid-column: techLeftMarg/end;
+    margin: 0 0%;
+    padding: 0 7rem;
+  }
+
+  @media (min-width: 400px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+
+    grid-column: techLeftMarg/end;
+    padding: 0 9rem;
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+    gap: 8rem;
   }
   @media (min-width: 1020px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+    gap: 8rem;
+    padding: 0 5rem;
   }
 
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2.5rem;
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 12rem;
+    padding: 0rem 25rem;
   }
 
   @media (min-width: 1440px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
+    gap: 3rem;
+    padding: 0rem;
+    margin: 0 10%;
   }
 
-  @media (min-width: 1900px) {
+  @media (min-width: 1600px) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 8rem;
+    gap: 5rem;
   }
 }
 
 //card 1
 
 .tech-card1 {
+  border-radius: 8px;
   transition: box-shadow 0.5s;
   will-change: transform;
   // box-shadow: 5px 5px 10px grey;
@@ -103,17 +124,17 @@
 
   // grid-row: techBody;
   // grid-column: techc1;
-  border: black 1px solid;
 }
 .tech-card1:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 
 .tech-card1-pic1 {
+  border-radius: 8px 8px 0 0;
   grid-row: techPic1;
   grid-column: techCardBody1;
+  background: #7a7a7a;
 
-  background: $darkestpurp;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -122,12 +143,14 @@
     //
     color: $mywhite;
 
-    height: 3rem;
+    height: 1.5rem;
     font-size: 18px;
   }
 }
 .tech-card1-list1 {
-  margin-top: 5px;
+  border-radius: 0px 0px 8px 8px;
+  margin-top: 0;
+
   background: lighten(#d8d0da, 0);
   grid-row: techSkills1;
   grid-column: techCardBody1;
@@ -153,10 +176,10 @@
   align-items: center;
 
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 1rem;
     width: 10rem;
-    color: white;
+    color: rgb(89, 89, 89);
   }
 }
 //second row
@@ -177,10 +200,10 @@
   align-items: center;
 
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 1rem;
     width: 10rem;
-    color: white;
+    color: rgb(89, 89, 89);
   }
 }
 
@@ -203,10 +226,10 @@
   align-items: center;
 
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 1rem;
     width: 10rem;
-    color: white;
+    color: rgb(89, 89, 89);
   }
 }
 
@@ -229,11 +252,143 @@
   align-items: center;
 
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 1rem;
     width: 10rem;
-    color: white;
+    color: rgb(89, 89, 89);
   }
 }
 
 //card 3
+
+.tech-skills {
+  grid-column: techc1/techc4;
+  grid-row: techTopMarg;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (min-width: 320px) {
+    grid-column: techLeftMarg/end;
+    grid-row: techTopMarg;
+    padding-left: 2rem;
+    padding-right: 0rem;
+  }
+  @media (min-width: 400px) {
+    padding-left: 2.5rem;
+    // padding-right: 5rem;
+  }
+
+  @media (min-width: 768px) {
+    grid-column: techLeftMarg/end;
+    grid-row: techTopMarg;
+
+    padding-right: 0rem;
+    align-items: left;
+    padding-left: 1.5rem;
+  }
+
+  @media (min-width: 1440px) {
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15rem;
+  }
+
+  @media (min-width: 1600px) {
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 18rem;
+  }
+
+  h1 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: black;
+
+    letter-spacing: -1px;
+    font-family: "bold", Helvetica, sans-serif;
+    @media (min-width: 320px) {
+      font-size: 23px;
+      padding: 0 1rem 0 0rem;
+      text-align: left;
+    }
+    @media (min-width: 360px) {
+      font-size: 23px;
+      padding: 0 2rem 0 0rem;
+      text-align: left;
+    }
+
+    @media (min-width: 768px) {
+      line-height: 35px;
+      letter-spacing: -1px;
+      font-size: 24px;
+      padding: 4rem 0 0 3rem;
+    }
+
+    @media (min-width: 1024px) {
+      line-height: 40px;
+      font-size: 35px;
+      padding: 0rem 6rem 0 3.5rem;
+
+      letter-spacing: 0px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 40px;
+      padding: 5rem 10rem 0 11rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 42px;
+      padding: 6rem 0rem 0 0rem;
+      margin-bottom: 3rem;
+    }
+    @media (min-width: 1600px) {
+      line-height: 70px;
+      font-size: 60px;
+      padding: 6rem 0rem 0 0rem;
+      margin-bottom: 3rem;
+    }
+  }
+  p {
+    font-family: "light", Helvetica, sans-serif;
+    @media (min-width: 320px) {
+      font-size: 15px;
+      padding: 2rem 0 6rem 0rem;
+    }
+    @media (min-width: 360px) {
+      font-size: 15px;
+      padding: 2rem 8rem 6rem 0rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0px;
+      padding: 2rem 8rem 4rem 3rem;
+    }
+    @media (min-width: 1024px) {
+      line-height: 32px;
+      letter-spacing: 0px;
+      font-size: 24px;
+      padding: 2rem 4rem 0rem 3.5rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 28px;
+      padding: 2rem 8rem 6rem 11rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 25px;
+      letter-spacing: -1.5px;
+      line-height: 37px;
+      padding: 1rem 8rem 6rem 0rem;
+    }
+    @media (min-width: 1600px) {
+      font-size: 40px;
+      letter-spacing: -1.5px;
+      line-height: 50px;
+      padding: 2rem 8rem 6rem 0rem;
+    }
+  }
+}

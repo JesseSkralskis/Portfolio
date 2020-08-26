@@ -2,18 +2,19 @@ import React from "react";
 import Tech from "./Tech";
 import NamePage from "./NamePage";
 import Skills from "./Skills";
-import Projects from "./Projects";
 
+import Projects2 from "./Projects2";
+import Exit from "./Exit";
 
 export default function Main() {
-  
   return (
     <div className="app__container">
-      <NamePage  />
+      <NamePage />
       <Skills />
       <Tech />
 
-      <Projects />
+      <Projects2 />
+      <Exit />
     </div>
   );
 }

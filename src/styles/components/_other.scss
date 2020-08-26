@@ -1,0 +1,514 @@
+.other__container {
+  background: lighten($color: #f8f8f6, $amount: 2);
+
+  display: flex;
+  flex-direction: column;
+
+  height: 300rem;
+
+  @media (min-width: 320px) {
+    height: 125rem;
+  }
+
+  @media (min-width: 768px) {
+    height: 236rem;
+  }
+
+  @media (min-width: 1024px) {
+    height: 240rem;
+  }
+
+  @media (min-width: 1280px) {
+    height: 253rem;
+  }
+  @media (min-width: 1440px) {
+    height: 290rem;
+  }
+
+  @media (min-width: 1600px) {
+    height: 440rem;
+  }
+}
+.other__header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  @media (min-width: 320px) {
+    padding: 0 2rem 0 2rem;
+    height: 21rem;
+  }
+  @media (min-width: 768px) {
+    padding: 0 0rem 0 0rem;
+    height: 28rem;
+  }
+  @media (min-width: 1024px) {
+    padding: 0 2rem 0 6rem;
+    height: 32rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 0rem 0 0rem;
+    height: 38rem;
+  }
+  @media (min-width: 1600px) {
+    padding: 0 2rem 0 12rem;
+    height: 48rem;
+  }
+
+  h1 {
+    font-family: "boldest", Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 0;
+    @media (min-width: 320px) {
+      font-size: 23px;
+    }
+
+    @media (min-width: 768px) {
+      line-height: 43px;
+      letter-spacing: -1px;
+      font-size: 40px;
+    }
+    @media (min-width: 1024px) {
+      line-height: 50px;
+      font-size: 50px;
+    }
+    @media (min-width: 1280px) {
+      letter-spacing: -2px;
+      line-height: 60px;
+      font-size: 60px;
+    }
+    @media (min-width: 1440px) {
+      letter-spacing: -2px;
+      line-height: 60px;
+      font-size: 60px;
+      margin-bottom: 0rem;
+    }
+    @media (min-width: 1600px) {
+      font-size: 60px;
+    }
+  }
+  p {
+    font-family: "light", Helvetica, sans-serif;
+
+    @media (min-width: 320px) {
+      font-size: 15px;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      line-height: 20px;
+      padding-top: 1rem;
+    }
+    @media (min-width: 768px) {
+      line-height: 30px;
+      letter-spacing: 0px;
+      font-size: 20px;
+      padding-right: 0;
+      padding-left: 0;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 24px;
+      padding-right: 0;
+      letter-spacing: 0px;
+      line-height: 30px;
+    }
+    @media (min-width: 1280px) {
+      font-size: 24px;
+      line-height: 37px;
+      letter-spacing: -1.5px;
+      padding-right: 0;
+    }
+    @media (min-width: 1440px) {
+      font-size: 25px;
+      line-height: 37px;
+      letter-spacing: -1.5px;
+      padding-right: 0;
+    }
+    @media (min-width: 1600px) {
+      font-size: 40px;
+      letter-spacing: -1.5px;
+      line-height: 52px;
+    }
+  }
+}
+
+.other__bulls-container {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-rows: [bullsTop] 30% [bullsBottom] 70% [end];
+  grid-template-columns: [bullsMleft] 5% [bullsCBody] 90% [bullsMright] 5% [end];
+  @media (min-width: 320px) {
+    margin-top: 0rem;
+    height: 300px;
+    grid-template-rows: [bullsTop] 30% [bullsBottom] 70% [end];
+    grid-template-columns: [bullsMleft] 5% [bullsCBody] 90% [bullsMright] 5% [end];
+  }
+  @media (min-width: 768px) {
+    margin-top: 0rem;
+    height: 600px;
+    grid-template-rows: [bullsTop] 30% [bullsBottom] 70% [end];
+    grid-template-columns: [bullsMleft] 5% [bullsCBody] 90% [bullsMright] 5% [end];
+  }
+  @media (min-width: 1440px) {
+    margin-top: 0rem;
+    height: 750px;
+    grid-template-rows: [bullsTop] 30% [bullsBottom] 70% [end];
+    grid-template-columns: [bullsMleft] 5% [bullsCBody] 90% [bullsMright] 5% [end];
+  }
+  @media (min-width: 1600px) {
+    margin-top: 0rem;
+    height: 1200px;
+    grid-template-rows: [bullsTop] 30% [bullsBottom] 70% [end];
+    grid-template-columns: [bullsMleft] 5% [bullsCBody] 90% [bullsMright] 5% [end];
+  }
+}
+.other__bulls-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-row: bullsTop;
+  grid-column: bullsMleft/end;
+  z-index: 1;
+  button {
+    font-family: "boldest", Helvetica, sans-serif;
+    background: rgb(48, 72, 206);
+    border-radius: 30px;
+    margin-right: 4rem;
+    margin-top: 5rem;
+
+    width: 27rem;
+    height: 7rem;
+    font-size: 24px;
+    color: white;
+
+    border: none;
+
+    font-weight: 900;
+    @media (min-width: 320px) {
+      width: 8rem;
+      height: 3rem;
+      font-size: 10px;
+      margin-right: 1rem;
+      margin-top: 4rem;
+    }
+    @media (min-width: 768px) {
+      width: 18rem;
+      height: 5rem;
+      font-size: 20px;
+      margin-right: 1rem;
+      margin-top: 17rem;
+    }
+    @media (min-width: 1024px) {
+      width: 20rem;
+      height: 6rem;
+      font-size: 22px;
+      margin-right: 3rem;
+      margin-top: 17rem;
+    }
+    @media (min-width: 1280px) {
+      width: 20rem;
+      height: 6rem;
+      font-size: 15px;
+      margin-right: 4rem;
+      margin-top: 32rem;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 3rem;
+    }
+    @media (min-width: 1600px) {
+      border-radius: 45px;
+      width: 32rem;
+      height: 9rem;
+      font-size: 30px;
+      margin-right: 6rem;
+    }
+  }
+}
+
+.other__bulls-pic-wrap {
+  grid-row: bullsTop/end;
+  grid-column: bullsCBody;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(216, 216, 216);
+}
+
+.other__bulls-pic {
+  height: 75%;
+  width: 85%;
+  background: url("/images/bulls.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  @media (min-width: 320px) {
+    height: 80%;
+  }
+}
+.other__tetris-container {
+  display: grid;
+  grid-template-rows: [tetrisTop] 30% [tetrisBottom] 70% [end];
+  grid-template-columns: [tetrisMleft] 5% [tetrisCBody] 90% [tetrisMright] 5% [end];
+  margin-top: 10rem;
+  height: 80rem;
+  @media (min-width: 320px) {
+    margin-top: 5rem;
+    height: 300px;
+    grid-template-rows: [tetrisTop] 30% [tetrisBottom] 70% [end];
+    grid-template-columns: [tetrisMleft] 5% [tetrisCBody] 90% [tetrisMright] 5% [end];
+  }
+  @media (min-width: 768px) {
+    margin-top: 5rem;
+    height: 600px;
+    grid-template-rows: [tetrisTop] 30% [tetrisBottom] 70% [end];
+    grid-template-columns: [tetrisMleft] 5% [tetrisCBody] 90% [tetrisMright] 5% [end];
+  }
+  @media (min-width: 1440px) {
+    margin-top: 5rem;
+    height: 750px;
+    grid-template-rows: [tetrisTop] 30% [tetrisBottom] 70% [end];
+    grid-template-columns: [tetrisMleft] 5% [tetrisCBody] 90% [tetrisMright] 5% [end];
+  }
+  @media (min-width: 1600px) {
+    height: 1200px;
+    margin-top: 10rem;
+  }
+}
+.other__tetris-button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  grid-row: tetrisTop;
+  grid-column: tetrisMleft/end;
+  z-index: 1;
+  button {
+    font-family: "boldest", Helvetica, sans-serif;
+    background: rgb(123, 123, 123);
+    border-radius: 30px;
+    margin-left: 4rem;
+
+    color: white;
+
+    border: none;
+
+    font-weight: 900;
+    @media (min-width: 320px) {
+      width: 8rem;
+      height: 3rem;
+      font-size: 10px;
+      margin-left: 1rem;
+    }
+    @media (min-width: 768px) {
+      width: 18rem;
+      height: 5rem;
+      font-size: 20px;
+      margin-left: 1rem;
+      margin-top: 17rem;
+    }
+    @media (min-width: 1024px) {
+      width: 20rem;
+      height: 6rem;
+      font-size: 22px;
+      margin-left: 3rem;
+    }
+    @media (min-width: 1280px) {
+      width: 20rem;
+      height: 6rem;
+      font-size: 24px;
+      margin-left: 4rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 15px;
+      margin-bottom: 4rem;
+    }
+    @media (min-width: 1600px) {
+      border-radius: 45px;
+      width: 32rem;
+      height: 9rem;
+      font-size: 30px;
+      margin-left: 6rem;
+    }
+  }
+}
+
+.other__tetris-wrap {
+  grid-row: tetrisTop/end;
+  grid-column: tetrisCBody;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  background: rgb(237, 237, 237);
+}
+
+.other__tetris-pic {
+  height: 80%;
+  width: 85%;
+  background: url("/images/tet.png");
+  background-size: cover;
+  @media (min-width: 320px) {
+    background-position: -8rem 0;
+  }
+  @media (min-width: 360px) {
+    background-position: -7rem 0;
+  }
+  @media (min-width: 400px) {
+    background-position: -5rem 0;
+  }
+  @media (min-width: 768px) {
+    background-position: -13rem 0;
+  }
+  @media (min-width: 1024px) {
+    background-position: -2rem 0;
+  }
+  @media (min-width: 1600px) {
+    background-position: -12rem 0;
+  }
+}
+
+.other__simon-container {
+  display: grid;
+  grid-template-rows: [simonTop] 30% [simonBottom] 70% [end];
+  grid-template-columns: [simonMleft] 5% [simonCBody] 90% [simonMright] 5% [end];
+  margin-top: 10rem;
+  height: 80rem;
+
+  @media (min-width: 320px) {
+    margin-top: 5rem;
+    height: 300px;
+    grid-template-rows: [simonTop] 30% [simonBottom] 70% [end];
+    grid-template-columns: [simonMleft] 5% [simonCBody] 90% [simonMright] 5% [end];
+  }
+  @media (min-width: 768px) {
+    margin-top: 5rem;
+    height: 600px;
+    grid-template-rows: [simonTop] 30% [simonBottom] 70% [end];
+    grid-template-columns: [simonMleft] 5% [simonCBody] 90% [simonMright] 5% [end];
+  }
+  @media (min-width: 1280px) {
+    margin-top: 5rem;
+    height: 700px;
+    grid-template-rows: [simonTop] 30% [simonBottom] 70% [end];
+    grid-template-columns: [simonMleft] 5% [simonCBody] 90% [simonMright] 5% [end];
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 5rem;
+    height: 800px;
+    grid-template-rows: [simonTop] 30% [simonBottom] 70% [end];
+    grid-template-columns: [simonMleft] 5% [simonCBody] 90% [simonMright] 5% [end];
+  }
+  @media (min-width: 1600px) {
+    margin-top: 10rem;
+    height: 1200px;
+  }
+}
+
+.other__simon-wrap {
+  grid-row: simonTop/end;
+  grid-column: simonCBody;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  background: rgb(116, 116, 116);
+}
+
+.other__simon-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-row: simonTop;
+  grid-column: simonMleft/end;
+  z-index: 1;
+  button {
+    font-family: "boldest", Helvetica, sans-serif;
+    background: rgb(29, 29, 29);
+    border-radius: 30px;
+    margin-right: 4rem;
+    margin-top: 5rem;
+
+    width: 27rem;
+    height: 7rem;
+    font-size: 24px;
+    color: white;
+
+    border: none;
+
+    @media (min-width: 320px) {
+      width: 8rem;
+      height: 3rem;
+      font-size: 10px;
+      margin-right: 1rem;
+      margin-top: 4rem;
+    }
+    @media (min-width: 768px) {
+      width: 18rem;
+      height: 5rem;
+      font-size: 20px;
+      margin-right: 1rem;
+      margin-top: 17rem;
+    }
+    @media (min-width: 1024px) {
+      width: 20rem;
+      height: 6rem;
+      font-size: 22px;
+      margin-right: 3rem;
+      margin-top: 17rem;
+    }
+    @media (min-width: 1280px) {
+      width: 20rem;
+      height: 6rem;
+      font-size: 24px;
+      margin-right: 4rem;
+      margin-top: 32rem;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 4rem;
+      font-size: 15px;
+    }
+    @media (min-width: 1600px) {
+      border-radius: 45px;
+      width: 32rem;
+      height: 9rem;
+      font-size: 30px;
+      margin-right: 6rem;
+    }
+  }
+}
+
+.other__simon-pic {
+  height: 85%;
+  width: 85%;
+  background: url("/images/simon2.png");
+  background-size: cover;
+  @media (min-width: 320px) {
+    background-position: -6rem 0;
+  }
+  @media (min-width: 360px) {
+    background-position: -4rem 0;
+  }
+  @media (min-width: 400px) {
+    background-position: -2.2rem 0;
+  }
+  @media (min-width: 768px) {
+    background-position: -7rem 0;
+  }
+
+  @media (min-width: 1024px) {
+    background-position: 0rem 0;
+  }
+  @media (min-width: 1440px) {
+    background-position: 0rem -3.5rem;
+  }
+  @media (min-width: 1600px) {
+    background-position: 0rem 2rem;
+  }
+}

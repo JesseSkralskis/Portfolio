@@ -1,0 +1,237 @@
+.aj__container {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-rows: [ajMain] 400px [ajButton] 600px [ajSecond] 856px;
+  grid-template-columns: [ajLeft] 1fr [ajRight] 1fr [end];
+  @media (min-width: 320px) {
+    margin-top: 3rem;
+    height: 600px;
+    grid-template-rows: [ajMain] 25% [ajButton] 25%[ajSecond] 50% [end];
+    grid-template-columns: [ajLeft] 50% [ajRight] 50% [end];
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 3rem;
+    height: 1200px;
+    grid-template-rows: [ajMain] 25% [ajButton] 25%[ajSecond] 50% [end];
+    grid-template-columns: [ajLeft] 50% [ajRight] 50% [end];
+  }
+  @media (min-width: 1024px) {
+    margin-top: 3rem;
+    height: 1600px;
+    grid-template-rows: [ajMain] 25% [ajButton] 25%[ajSecond] 50% [end];
+    grid-template-columns: [ajLeft] 50% [ajRight] 50% [end];
+  }
+  @media (min-width: 1280px) {
+    margin-top: 3rem;
+    height: 1800px;
+    grid-template-rows: [ajMain] 27.5% [ajButton] 27.5%[ajSecond] 45% [end];
+    grid-template-columns: [ajLeft] 50% [ajRight] 50% [end];
+  }
+  @media (min-width: 1600px) {
+    margin-top: 3rem;
+    height: 2400px;
+    grid-template-rows: [ajMain] 27.5% [ajButton] 27.5%[ajSecond] 45% [end];
+    grid-template-columns: [ajLeft] 50% [ajRight] 50% [end];
+  }
+}
+
+.aj__second-pic {
+  grid-row: ajSecond;
+  grid-column: ajLeft/end;
+
+  width: 90%;
+  margin: 0 auto;
+
+  background: url("/images/aj2new.png") no-repeat;
+  background-size: cover;
+
+  @media (min-width: 320px) {
+    // border: 2px solid red;
+
+    height: 90%;
+    width: 90%;
+    margin-top: 0;
+    background-position: -6rem 0;
+  }
+  @media (min-width: 360px) {
+    background-position: -4rem 0;
+  }
+  @media (min-width: 768px) {
+    background-position: -4rem 0;
+  }
+  @media (min-width: 1024px) {
+    background-position: -9rem 0;
+  }
+  @media (min-width: 1280px) {
+    background-position: 0rem 0;
+  }
+}
+.aj__main-pic-wrapper {
+  grid-row: ajMain/ajSecond;
+  grid-column: ajLeft/end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background: grey;
+  height: 1000px;
+  margin: 0 auto;
+  @media (min-width: 320px) {
+    // border: 2px solid red;
+    grid-row: ajMain/ajSecond;
+    grid-column: ajLeft/end;
+    height: 90%;
+    width: 90%;
+  }
+}
+
+.aj__main-pic {
+  margin: 0;
+
+  width: 80%;
+
+  background: url("/images/ajnew.png") no-repeat;
+  background-size: cover;
+  @media (min-width: 320px) {
+    height: 85%;
+    width: 85%;
+    background-position: -3.5rem 0;
+  }
+  @media (min-width: 360px) {
+    background-position: -1.5rem 0;
+  }
+  @media (min-width: 360px) {
+    height: 90%;
+  }
+  @media (min-width: 360px) {
+    height: 85%;
+    background-position: 0rem 0;
+  }
+}
+
+.aj__button-container {
+  grid-row: ajMain;
+  grid-column: ajLeft;
+
+  display: flex;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.aj__button2-container {
+  z-index: 1;
+  grid-row: ajMain;
+  grid-column: ajRight;
+  display: flex;
+  justify-content: flex-end;
+}
+//buttons
+.aj__repository {
+  background: rgb(0, 0, 0);
+  border-radius: 30px;
+  width: 27rem;
+  height: 7rem;
+  font-size: 24px;
+  color: white;
+
+  border: none;
+  font-family: "larsseit";
+  font-weight: 900;
+  margin-right: 4rem;
+  margin-top: 22rem;
+  @media (min-width: 320px) {
+    width: 8rem;
+    height: 3rem;
+    font-size: 10px;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+  @media (min-width: 768px) {
+    width: 18rem;
+    height: 5rem;
+    font-size: 20px;
+    margin-right: 1rem;
+    margin-top: 17rem;
+  }
+  @media (min-width: 1024px) {
+    width: 20rem;
+    height: 6rem;
+    font-size: 22px;
+    margin-right: 3rem;
+    margin-top: 17rem;
+  }
+  @media (min-width: 1280px) {
+    width: 20rem;
+    height: 6rem;
+    font-size: 15px;
+    margin-right: 4rem;
+    margin-top: 32rem;
+  }
+  @media (min-width: 1600px) {
+    border-radius: 45px;
+    width: 32rem;
+    height: 9rem;
+    font-size: 30px;
+    margin-right: 6rem;
+  }
+}
+
+.aj__view {
+  background: rgb(0, 0, 0);
+  border-radius: 30px;
+  margin-right: 4rem;
+
+  width: 27rem;
+  height: 7rem;
+  font-size: 24px;
+  color: white;
+  margin-left: 4rem;
+  border: none;
+  font-family: "larsseit";
+  font-weight: 900;
+  margin-top: 22rem;
+  @media (min-width: 320px) {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 3rem;
+    font-size: 10px;
+    margin-left: 1rem;
+  }
+  @media (min-width: 768px) {
+    width: 18rem;
+    height: 5rem;
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-top: 17rem;
+  }
+  @media (min-width: 1024px) {
+    width: 20rem;
+    height: 6rem;
+    font-size: 22px;
+    margin-left: 3rem;
+    margin-top: 17rem;
+  }
+  @media (min-width: 1280px) {
+    width: 20rem;
+    height: 6rem;
+    font-size: 15px;
+    margin-top: 32rem;
+  }
+  @media (min-width: 1600px) {
+    border-radius: 45px;
+    width: 32rem;
+    height: 9rem;
+    font-size: 30px;
+    margin-left: 6rem;
+  }
+}
+
+.aj__awrap {
+  height: 10rem;
+  margin-top: 10rem;
+  @media (min-width: 320px) {
+    height: 9rem;
+    margin-top: 0rem;
+  }
+}

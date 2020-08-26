@@ -34,7 +34,7 @@ export default function SkillsCard1() {
       </div>
       <div className="tech-card1-list1">
         <div className="list1R1">
-          <h2>JAVASCRIPT</h2>
+          <h2>Javascript</h2>
         </div>
         <div className="list1-icon1"></div>
         <div className="list1R2">
@@ -42,7 +42,7 @@ export default function SkillsCard1() {
         </div>
         <div className="list1-icon2"></div>
         <div className="list1R3">
-          <h2>REACT/REDUX</h2>
+          <h2>React / Redux</h2>
         </div>
         <div className="list1-icon3"></div>
         <div className="list1R4">

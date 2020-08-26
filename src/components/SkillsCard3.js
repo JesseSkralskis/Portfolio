@@ -32,15 +32,15 @@ export default function SkillsCard3() {
       </div>
       <div className="tech-card3-list3">
         <div className="list3R1">
-          <h2>MONGO DB</h2>
+          <h2>MongoDB</h2>
         </div>
         <div className="list3-icon1"></div>
         <div className="list3R2">
-          <h2>MYSQL</h2>
+          <h2>MySQL</h2>
         </div>
         <div className="list3-icon2"></div>
         <div className="list3R3">
-          <h2>FIREBASE</h2>
+          <h2>Firebase</h2>
         </div>
         <div className="list3-icon3"></div>
       </div>

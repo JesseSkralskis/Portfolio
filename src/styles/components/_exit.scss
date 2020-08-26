@@ -1,0 +1,140 @@
+.exit__container {
+  @media (min-width: 320px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+  }
+  @media (min-width: 360px) {
+    height: 50rem;
+  }
+
+  @media (min-width: 768px) {
+    height: 80rem;
+  }
+  @media (min-width: 1024px) {
+    height: 90rem;
+  }
+  @media (min-width: 1280px) {
+    height: 80rem;
+  }
+
+  @media (min-width: 1440px) {
+    height: 90rem;
+  }
+  @media (min-width: 1600px) {
+    height: 120rem;
+  }
+}
+.exit__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 320px) {
+    margin-bottom: 4rem;
+
+    height: 80%;
+    width: 80%;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 10rem;
+  }
+  @media (min-width: 1024px) {
+    margin-bottom: 16rem;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 12rem;
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 6rem;
+  }
+
+  h1 {
+    font-family: "boldest", Helvetica, sans-serif;
+    text-align: center;
+    @media (min-width: 320px) {
+      font-size: 50px;
+      line-height: 45px;
+      letter-spacing: -2px;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 360px) {
+      font-size: 60px;
+      line-height: 50px;
+    }
+    @media (min-width: 400px) {
+      letter-spacing: -4px;
+    }
+    @media (min-width: 768px) {
+      letter-spacing: -4px;
+      font-size: 100px;
+      line-height: 85px;
+      margin-bottom: 4rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 120px;
+      letter-spacing: -9px;
+      line-height: 114px;
+    }
+    @media (min-width: 1440px) {
+      letter-spacing: -9px;
+      line-height: 125px;
+      font-size: 140px;
+      padding: 0 0rem;
+    }
+    @media (min-width: 1600px) {
+      letter-spacing: -9px;
+      line-height: 170px;
+      font-size: 200px;
+      padding: 0 0rem;
+
+      margin: 0;
+    }
+  }
+  h4 {
+    @media (min-width: 320px) {
+      font-family: "light", Helvetica, sans-serif;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 2rem;
+      letter-spacing: 0;
+      line-height: 23px;
+    }
+    @media (min-width: 768px) {
+      letter-spacing: 0;
+      line-height: 30px;
+      margin-bottom: 7rem;
+      font-size: 27px;
+    }
+    @media (min-width: 1280px) {
+      font-size: 30px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 29px;
+      font-weight: 100;
+      margin-top: 5rem;
+      margin-bottom: 8rem;
+      letter-spacing: 0;
+      line-height: 32px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 40px;
+
+      margin-top: 5rem;
+      margin-bottom: 8rem;
+      letter-spacing: 0;
+      line-height: 50px;
+    }
+  }
+}
+
+.exit__contact-container {
+  width: 60vw;
+  font-size: 26px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -33,11 +33,11 @@ export default function SkillsCard4() {
 
       <div className="tech-card4-list4">
         <div className="list4R1">
-          <h2>HEROKU</h2>
+          <h2>Heroku</h2>
         </div>
         <div className="list4-icon1"></div>
         <div className="list4R2">
-          <h2>NETLIFY</h2>
+          <h2>Netlify</h2>
         </div>
         <div className="list4-icon2"></div>
       </div>

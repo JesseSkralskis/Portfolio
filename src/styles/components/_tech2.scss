@@ -1,6 +1,7 @@
 //card 2
 
 .tech-card2 {
+  border-radius: 8px;
   transition: box-shadow 0.5s;
   will-change: transform;
   // box-shadow: 5px 5px 10px grey;
@@ -8,19 +9,17 @@
   display: grid;
   grid-template-rows: [techPic2] 0.75fr [techSkills2] 3fr;
   grid-template-columns: [techCardBody2] auto [end];
-  // grid-row: techBody;
-  // grid-column: techc2;
-  border: black 1px solid;
 }
 
 .tech-card2:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 .tech-card2-pic2 {
+  border-radius: 8px 8px 0 0;
   grid-row: techPic2;
   grid-column: techCardBody2;
   // background: url("/images/server.png") no-repeat;
-  background: $thelightestpurp;
+  background: #7a7a7a;
 
   background-size: cover;
   display: flex;
@@ -29,7 +28,7 @@
   h2 {
     color: white;
 
-    height: 3rem;
+    height: 1.5rem;
     font-size: 18px;
     @media (min-width: 1920px) {
       font-size: 27px;
@@ -40,7 +39,7 @@
 //list
 
 .tech-card2-list2 {
-  margin-top: 5px;
+  border-radius: 0 0 8px 8px;
   background: lighten(#d8d0da, 0);
   grid-row: techSkills2;
   grid-column: techCardBody2;
@@ -66,10 +65,10 @@
   align-items: center;
 
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 1rem;
     width: 10rem;
-    color: white;
+    color: rgb(89, 89, 89);
   }
 }
 //second row
@@ -90,10 +89,10 @@
   align-items: center;
 
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 1rem;
     width: 10rem;
-    color: white;
+    color: rgb(89, 89, 89);
   }
 }
 
@@ -116,9 +115,9 @@
   align-items: center;
 
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 0.8rem;
     width: 10rem;
-    color: white;
+    color: rgb(89, 89, 89);
   }
 }

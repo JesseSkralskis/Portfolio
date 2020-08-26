@@ -33,15 +33,15 @@ export default function SkillsCard2() {
       </div>
       <div className="tech-card2-list2">
         <div className="list2R1">
-          <h2>NODEJS</h2>
+          <h2>Node JS</h2>
         </div>
         <div className="list2-icon1"></div>
         <div className="list2R2">
-          <h2>EXPRESS</h2>
+          <h2>Express</h2>
         </div>
         <div className="list2-icon2"></div>
         <div className="list2R3">
-          <h2>JAVA/SERVLETS</h2>
+          <h2>Java/Servlets</h2>
         </div>
         <div className="list2-icon3"></div>
       </div>

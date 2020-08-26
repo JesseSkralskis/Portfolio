@@ -1,292 +1,296 @@
 .skills__container {
-  background: $mywhite;
+  background: lighten($color: #f3f3f1, $amount: 2);
 
   width: 100vw;
   display: grid;
 
   @media (min-width: 320px) {
-    height: 84rem;
-    grid-template-rows: [skillsTopMarg] 4rem [skillsHeader] 9rem [skillsPic] 60rem [skillsBelowPic] 2rem [skillsbottemMarg] 7rem [skillsBottomCatch] 1rem[end];
-    grid-template-columns: [skillsLeftMarg] 3% [skillsColPic] 3fr [skillsDivider] 1fr [skillsText] 4fr [skillsMargRight] 3% [end];
+    padding-top: 3rem;
+    height: 70rem;
+    grid-template-rows: [skillsTopMarg] 10% [skillsHeader] 40% [skillsPic] 19% [mouse] 31% [bottomMarg] 0%[end];
+    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 4fr [skillsText] 4fr [skillsMargRight] 2% [end];
   }
 
   @media (min-width: 768px) {
-    height: 131rem;
-    grid-template-rows: [skillsTopMarg] 4rem [skillsHeader] 18rem [skillsPic] 90rem [skillsBelowPic] 2rem [skillsbottemMarg] 12rem [skillsBottomCatch] 1rem[end];
-    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 3fr [skillsDivider] 1fr [skillsText] 4fr [skillsMargRight] 2% [end];
+    height: 100rem;
+    padding-top: 3rem;
+
+    grid-template-rows: [skillsTopMarg] 10% [skillsHeader] 40% [skillsPic] 9% [mouse] 41% [bottomMarg] 0%[end];
+    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 4fr [skillsText] 4fr [skillsMargRight] 2% [end];
   }
   @media (min-width: 1024px) {
-    height: 85rem;
-    grid-template-rows: [skillsTopMarg] 4rem [skillsHeader] 20rem [skillsPic] 40rem [skillsBelowPic] 2rem [skillsbottemMarg] 15rem [skillsBottomCatch] 1rem[end];
-    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 3fr [skillsDivider] 1fr [skillsText] 4fr [skillsMargRight] 2% [end];
+    height: 100rem;
+    padding-top: 3rem;
+
+    grid-template-rows: [skillsTopMarg] 10% [skillsHeader] 40% [skillsPic] 9% [mouse] 41% [bottomMarg] 0%[end];
+    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 4fr [skillsText] 4fr [skillsMargRight] 2% [end];
   }
 
-  @media (min-width: 1440px) {
-    height: 88rem;
-    grid-template-rows: [skillsTopMarg] 4rem [skillsHeader] 22rem [skillsPic] 40rem [skillsBelowPic] 2rem [skillsbottemMarg] 17rem [skillsBottomCatch] 1rem[end];
-    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 3fr [skillsDivider] 1fr [skillsText] 4fr [skillsMargRight] 2% [end];
-  }
+  @media (min-width: 1280px) {
+    height: 120rem;
+    padding-top: 3rem;
 
-  @media (min-width: 1900px) {
-    height: 115rem;
-    grid-template-rows: [skillsTopMarg] 4rem [skillsHeader] 30rem [skillsPic] 50rem [skillsBelowPic] 2rem [skillsbottemMarg] 23rem [skillsBottomCatch] 1rem[end];
-    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 3fr [skillsDivider] 1fr [skillsText] 4fr [skillsMargRight] 2% [end];
+    grid-template-rows: [skillsTopMarg] 10% [skillsHeader] 30% [skillsPic] 19% [mouse] 41% [bottomMarg] 0%[end];
+    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 4fr [skillsText] 4fr [skillsMargRight] 2% [end];
+  }
+  @media (min-width: 1600px) {
+    height: 150rem;
+    padding-top: 3rem;
+
+    grid-template-rows: [skillsTopMarg] 14rem [skillsHeader] 56rem [skillsPic] 22.5rem [mouse] 57.5rem [bottomMarg] 0%[end];
+    grid-template-columns: [skillsLeftMarg] 2% [skillsColPic] 4fr [skillsText] 4fr [skillsMargRight] 2% [end];
   }
 }
 // background
 
-.skills__bg-art {
-  z-index: 1;
+.skills__text-box-container {
+  grid-row: skillsTopMarg/skillsPic;
   grid-column: skillsColPic/skillsMargRight;
-  grid-row: skillsHeader/skillsBottomCatch;
-  background: url("/images/curcuit.png");
-  background-size: cover;
-}
+  // border: green 2px solid;
 
-//pic and text
-
-.skills__pic-text-wrapper {
-  z-index: 3;
-  background: white;
-  grid-row: skillsPic;
-  grid-column: skillsColPic/skillsMargRight;
-  display: grid;
-
+  // padding-top: 18rem;
   @media (min-width: 320px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1rem 0rem 0 1.5rem;
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding: 0rem 2rem 0 2rem;
   }
-
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-  }
-}
-.skills__pic-box {
-  background: white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (min-width: 320px) {
-    height: 30rem;
+    padding: 0rem 2rem 0 3rem;
   }
 
-  @media (min-width: 768px) {
-    height: 50rem;
+  @media (min-width: 1280px) {
+    padding: 4rem 0rem 0 11rem;
   }
-
-  @media (min-width: 1024px) {
-    height: 40rem;
-    z-index: 2;
-  }
-
-  @media (min-width: 1900px) {
-    height: 50rem;
-    z-index: 2;
-  }
-}
-.skills__pic {
-  border: black solid 1px;
-  box-shadow: 5px 5px 10px grey;
-
-  width: 100%;
-  background: url("/images/headShot.jpeg");
-  background-size: cover;
-  background-position: 0 0;
-  @media (min-width: 320px) {
-    height: 95%;
-    background-position: 0rem 0;
-  }
-
-  @media (min-width: 1024px) {
-    height: 93%;
-    background-position: 0rem -4rem;
-  }
-}
-.skills__text-box {
-  background: white;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  padding-left: 1rem;
-
-  z-index: 2;
-  @media (min-width: 320px) {
-    padding-left: 0;
-    height: 30rem;
-    padding-bottom: 0.5rem;
-  }
-  @media (min-width: 768px) {
-    height: 40rem;
-  }
-
-  @media (min-width: 1024px) {
-    padding-bottom: 0;
-  }
-
-  @media (min-width: 1900px) {
-    padding-bottom: 0;
-    height: 50rem;
-  }
-}
-
-.skills-text {
-  background: $darkestpurp;
-  border: black solid 1px;
-  box-shadow: 5px 5px 10px grey;
-  width: 100%;
-  height: 90%;
-  overflow-y: scroll;
-  z-index: 1;
-  @media (min-width: 320px) {
-    height: 95%;
-  }
-
-  @media (min-width: 1024px) {
-    height: 93%;
-  }
-
-  p {
-    color: white;
-
-    line-height: 1.5;
-    z-index: 2;
-    @media (min-width: 320px) {
-      font-size: 17px;
-      font-weight: 400;
-      padding: 0 3rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 22px;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 21px;
-    }
-
-    @media (min-width: 1440px) {
-      padding: 2rem 3rem;
-      font-size: 24px;
-    }
-
-    @media (min-width: 1900px) {
-      font-size: 28px;
-      font-weight: 500;
-    }
+  @media (min-width: 1600px) {
+    padding: 4rem 0rem 0 14rem;
   }
 
   h1 {
-    color: white;
-    padding: 1rem 3rem;
-    text-align: center;
+    font-family: "bold", Helvetica, sans-serif;
+
     @media (min-width: 320px) {
       font-size: 20px;
-      font-weight: 600;
-      padding: 0 3rem;
+      padding-right: 2rem;
+      margin-bottom: 2rem;
     }
-
-    @media (min-width: 768px) {
-      font-size: 24px;
-      padding: 1rem 3rem;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 21px;
-    }
-
-    @media (min-width: 1440px) {
-      font-size: 25px;
-      padding: 2.5rem 3rem;
-    }
-
-    @media (min-width: 1900px) {
-      font-size: 30px;
-    }
-  }
-
-  hr {
-    width: 80%;
-  }
-}
-
-//header footer
-
-.skills__header {
-  z-index: 2;
-  background: transparentize($lightGarfield, 0.4);
-
-  grid-row: skillsHeader;
-  grid-column: skillsColPic/skillsMargRight;
-  display: flex;
-  justify-content: center;
-  @media (min-width: 320px) {
-    align-items: center;
-  }
-  h1 {
-    color: $mywhite;
-    font-size: 35px;
-
-    display: inline-block;
     @media (min-width: 320px) {
-      margin-top: 2rem;
-      font-size: 19px;
-    }
-    @media (min-width: 768px) {
-      font-size: 30px;
-      margin-top: 7rem;
-    }
-    @media (min-width: 1024px) {
-      font-size: 30px;
-      margin-top: 8rem;
+      font-size: 23px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 768px) {
+      line-height: 35px;
+      letter-spacing: -1px;
+      font-size: 30px;
+      margin-top: 6rem;
+      padding-right: 20rem;
+    }
+    @media (min-width: 1024px) {
+      line-height: 40px;
+      letter-spacing: -1px;
       font-size: 35px;
       margin-top: 10rem;
+      padding-right: 30rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 40px;
+      margin-top: 5rem;
+      padding-right: 40rem;
     }
 
-    @media (min-width: 1900px) {
-      font-size: 50px;
-      margin-top: 15rem;
+    @media (min-width: 1440px) {
+      line-height: 50px;
+      letter-spacing: -1px;
+      font-size: 42px;
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
+    @media (min-width: 1600px) {
+      line-height: 65px;
+      letter-spacing: -1px;
+      font-size: 60px;
+      margin-top: 13rem;
+    }
+  }
+  p {
+    font-family: "light", Helvetica, sans-serif;
+    margin-right: 10rem;
+
+    @media (min-width: 320px) {
+      font-size: 13px;
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 17rem;
+    }
+    @media (min-width: 360px) {
+      font-size: 15px;
+      margin-right: 2rem;
+      margin-left: 0;
+      padding-right: 14rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0px;
+
+      padding-right: 30rem;
+    }
+    @media (min-width: 1024px) {
+      line-height: 32px;
+      letter-spacing: 0px;
+      font-size: 24px;
+      padding-right: 40rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 25px;
+      padding-right: 48rem;
+      line-height: 37px;
+      letter-spacing: -1.5px;
+    }
+    @media (min-width: 1600px) {
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: -1.5px;
+      padding-right: 60rem;
     }
   }
 }
 
-.skills__footer {
-  z-index: 3;
-  background: transparentize($lightGarfield, 0.4);
-  grid-row: skillsBelowPic/skillsBottomCatch;
+.skills__picture-box {
+  grid-row: skillsPic/bottomMarg;
   grid-column: skillsColPic/skillsMargRight;
-}
-//svgs
 
-.skills__topsvg {
-  grid-row: skillsTopMarg/end;
-  grid-column: skillsLeftMarg/end;
-  z-index: 3;
+  padding: 4rem 0;
   @media (min-width: 320px) {
-    grid-row: skillsTopMarg/skillsPic;
-    grid-column: skillsLeftMarg/end;
-    margin-top: 2.7rem;
+    padding: 1rem 0;
   }
 }
+.skills__picture {
+  border-radius: 10px;
+  background: url("/images/headshoymybw.jpeg") no-repeat;
 
-.skills_svg-container {
-  grid-row: skillsTopMarg/end;
-  grid-column: skillsLeftMarg/end;
-  margin-top: auto;
-  z-index: 3;
   @media (min-width: 320px) {
-    margin-bottom: 1%;
+    height: 80%;
+    width: 95%;
+    background-size: cover;
+    margin: 0 auto;
+    background-position: -3rem 0;
   }
-
+  @media (min-width: 360px) {
+    background-position: -1rem 0;
+  }
+  @media (min-width: 400px) {
+    background-position: 0rem 0;
+  }
   @media (min-width: 768px) {
-    margin-bottom: 0%;
+    height: 100%;
+    width: 95%;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  @media (min-width: 1280px) {
+    height: 100%;
+    width: 85%;
+    background-size: cover;
+    margin: 0 auto;
+  }
+}
+
+.skills__mouse {
+  grid-row: skillsTopMarg/mouse;
+  grid-column: skillsText/skillsMargRight;
+
+  background: url("/images/zen.png") no-repeat;
+  z-index: 2;
+  background-size: contain;
+  background-position: 0rem 0rem;
+  margin-left: 24rem;
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+  @media (min-width: 320px) {
+    grid-row: skillsTopMarg/end;
+    grid-column: skillsText/skillsMargRight;
+    margin-left: 0.5rem;
+    margin-top: 17rem;
+    margin-bottom: 0rem;
+  }
+  @media (min-width: 360px) {
+    margin-left: 1rem;
+    margin-top: 14rem;
+    margin-bottom: 12rem;
+  }
+  @media (min-width: 400px) {
+    margin-left: 3.5rem;
+  }
+  @media (min-width: 768px) {
+    margin-left: 7rem;
+  }
+  @media (min-width: 1024px) {
+    margin-left: 15rem;
+    margin-top: 8rem;
+  }
+  @media (min-width: 1280px) {
+    margin-left: 18rem;
+    margin-top: 4rem;
+    margin-bottom: 20rem;
+    margin-right: 8rem;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 23rem;
+    margin-top: 4rem;
+    margin-bottom: 30rem;
+    margin-right: 10rem;
+  }
+  @media (min-width: 1600px) {
+    margin-left: 30rem;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+    margin-right: 12rem;
+  }
+}
+.skills__emailBox {
+  grid-row: skillsPic/bottomMarg;
+  grid-column: skillsColPic/skillsMargRight;
+
+  display: flex;
+
+  @media (min-width: 320px) {
+    align-items: center;
+    margin-bottom: 4rem;
+    grid-row: skillsHeader/bottomMarg;
+
+    margin-left: 0.75rem;
+  }
+  @media (min-width: 360px) {
+    margin-bottom: 12rem;
+  }
+  @media (min-width: 400px) {
+    align-items: center;
+    margin-bottom: 14rem;
+    margin-left: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-top: 27rem;
+  }
+  @media (min-width: 1024px) {
+    margin-left: 2.75rem;
+    margin-top: 0rem;
+    align-items: center;
+    margin-bottom: 25rem;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 48rem;
+    margin-left: 10rem;
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 48rem;
+  }
+
+  @media (min-width: 1600px) {
+    margin-top: 10rem;
+    margin-left: 14rem;
   }
 }
