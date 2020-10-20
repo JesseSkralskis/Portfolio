@@ -4,6 +4,7 @@ import Pathways from "./Pathways";
 import Aj from "./Aj";
 import Playlist from "./Playlist";
 import Other from "./Other";
+import Tread from "./Tread";
 
 export default function Projects2() {
   return (
@@ -31,6 +32,7 @@ export default function Projects2() {
           </p>
         )}
       </div>
+      <Tread />
       <Haven />
       <Pathways />
       <Aj />
