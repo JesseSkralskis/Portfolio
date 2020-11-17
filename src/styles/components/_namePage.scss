@@ -216,7 +216,7 @@
       font-size: 20px;
     }
     @media (min-width: 768px) {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     @media (min-width: 1440px) {
@@ -228,5 +228,8 @@
 
     background: none;
     color: white;
+    i {
+      font-size: 32px;
+    }
   }
 }

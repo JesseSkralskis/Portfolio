@@ -125,20 +125,14 @@
 
 .pw__button-container {
   grid-row: pwMain;
-  grid-column: pwLeft;
+  grid-column: pwLeft/end;
 
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   z-index: 1;
 }
 
-.pw__button2-container {
-  z-index: 1;
-  grid-row: pwMain;
-  grid-column: pwRight;
-  display: flex;
-  justify-content: flex-end;
-}
 //buttons
 .pw__repository {
   background: rgb(13, 124, 9);
@@ -243,7 +237,7 @@
   margin-top: 5rem;
   @media (min-width: 320px) {
     height: 3rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 }
 

@@ -30,6 +30,17 @@ export default function Other() {
               href="https://github.com/JesseSkralskis/tetris"
             >
               {" "}
+              <button>About Project</button>
+            </a>
+          </div>
+          <div className="button-wrappers">
+            <a
+              rel="noopener noreferrer"
+              className="link"
+              target="_blank"
+              href="https://github.com/JesseSkralskis/tetris"
+            >
+              {" "}
               <button>See the Code</button>
             </a>
           </div>
@@ -48,6 +59,16 @@ export default function Other() {
               target="_blank"
               href="https://github.com/JesseSkralskis/tetris"
             >
+              <button>About Project</button>
+            </a>
+          </div>
+          <div className="button-wrappers">
+            <a
+              rel="noopener noreferrer"
+              className="link"
+              target="_blank"
+              href="https://github.com/JesseSkralskis/tetris"
+            >
               <button>See the Code</button>
             </a>
           </div>
@@ -58,6 +79,16 @@ export default function Other() {
       </div>
       <div className="other__simon-container">
         <div className="other__simon-button-container">
+          <div className="button-wrappers">
+            <a
+              rel="noopener noreferrer"
+              className="link"
+              target="_blank"
+              href="https://github.com/JesseSkralskis/simonSays"
+            >
+              <button>About Project</button>
+            </a>
+          </div>
           <div className="button-wrappers">
             <a
               rel="noopener noreferrer"

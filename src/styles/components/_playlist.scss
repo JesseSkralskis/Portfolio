@@ -178,19 +178,12 @@
 }
 .pl__button-container {
   grid-row: plMain;
-  grid-column: plLeft;
+  grid-column: plLeft/end;
+  justify-content: space-between;
 
   display: flex;
   align-items: flex-start;
   z-index: 1;
-}
-
-.pl__button2-container {
-  z-index: 1;
-  grid-row: plMain;
-  grid-column: plRight;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .pl__repository {

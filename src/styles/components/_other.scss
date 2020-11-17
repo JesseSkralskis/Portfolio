@@ -169,7 +169,7 @@
 }
 .other__bulls-button-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   grid-row: bullsTop;
   grid-column: bullsMleft/end;
@@ -281,7 +281,7 @@
 }
 .other__tetris-button-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-end;
   grid-row: tetrisTop;
   grid-column: tetrisMleft/end;
@@ -423,7 +423,7 @@
 
 .other__simon-button-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   grid-row: simonTop;
   grid-column: simonMleft/end;

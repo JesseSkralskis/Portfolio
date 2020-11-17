@@ -112,20 +112,14 @@
 
 .aj__button-container {
   grid-row: ajMain;
-  grid-column: ajLeft;
+  grid-column: ajLeft/end;
 
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   z-index: 1;
 }
 
-.aj__button2-container {
-  z-index: 1;
-  grid-row: ajMain;
-  grid-column: ajRight;
-  display: flex;
-  justify-content: flex-end;
-}
 //buttons
 .aj__repository {
   background: rgb(0, 0, 0);

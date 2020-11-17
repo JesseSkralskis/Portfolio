@@ -10,7 +10,7 @@ export default function NamePage() {
     gsap.to(".app__container", {
       duration: 1.5,
       scrollTo: scrollBasedOnwidth().projects,
-      autoKill: false
+      autoKill: false,
       //   ease: "power2"
     });
   };
@@ -18,34 +18,34 @@ export default function NamePage() {
   const scrollBasedOnwidth = () => {
     if (window.innerWidth <= 414) {
       return {
-        projects: 2800
+        projects: 2800,
       };
     }
     if (window.innerWidth <= 768) {
       return {
-        projects: 3300
+        projects: 3300,
       };
     }
     if (window.innerWidth <= 1024) {
       return {
-        projects: 3700
+        projects: 3700,
       };
     }
     if (window.innerWidth <= 1280) {
       return {
-        projects: 3760
+        projects: 3760,
       };
     }
 
     if (window.innerWidth <= 1440) {
       return {
-        projects: 3150
+        projects: 3150,
       };
     }
 
     if (window.innerWidth <= 4000) {
       return {
-        projects: 3800
+        projects: 3800,
       };
     }
   };
@@ -65,7 +65,7 @@ export default function NamePage() {
             <a
               style={{
                 textDecoration: "none",
-                color: "white"
+                color: "white",
               }}
               href="https://github.com/JesseSkralskis"
               target="blank_"
@@ -77,7 +77,7 @@ export default function NamePage() {
           <div className="namePage__scrollTo">
             <button onClick={() => handleScroll()}>
               <i className="fas fa-arrow-circle-down"></i>{" "}
-              <span>See projects</span>
+              <span> Projects</span>
             </button>
           </div>
         </div>

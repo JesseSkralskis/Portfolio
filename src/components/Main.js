@@ -3,7 +3,7 @@ import Tech from "./Tech";
 import NamePage from "./NamePage";
 import Skills from "./Skills";
 
-import Projects2 from "./Projects2";
+import Projects from "./Projects";
 import Exit from "./Exit";
 
 export default function Main() {
@@ -13,7 +13,7 @@ export default function Main() {
       <Skills />
       <Tech />
 
-      <Projects2 />
+      <Projects />
       <Exit />
     </div>
   );
