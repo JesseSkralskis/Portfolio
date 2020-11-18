@@ -18,9 +18,9 @@ const blogProps = {
 
   seeCodeUrl: "https://github.com/JesseSkralskis/Developer-Blog",
   viewurl: "https://angry-villani-25c06d.netlify.app",
-  buttonColor: "#113529",
-  headerColor: "#113529",
-  photo: "/images/blogCollagegrey.png",
+  buttonColor: "#5f5f5f",
+  headerColor: "#000000",
+  photo: "/images/BlogCollagedarker.png",
   buttonHeight: "10",
 };
 

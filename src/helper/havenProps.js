@@ -23,9 +23,9 @@ const havenProps = {
 
   seeCodeUrl: "https://github.com/JesseSkralskis/Haven",
   viewurl: "https://jessehaven.netlify.app",
-  buttonColor: "#391ed4",
-  headerColor: "#190e80",
-  photo: "/images/Havencollage.png",
+  buttonColor: "#5f5f5f",
+  headerColor: "#000000",
+  photo: "/images/havencollagegrey.png",
   buttonHeight: "10",
 };
 

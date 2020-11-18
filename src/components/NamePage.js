@@ -76,8 +76,9 @@ export default function NamePage() {
           </div>
           <div className="namePage__scrollTo">
             <button onClick={() => handleScroll()}>
-              <i className="fas fa-arrow-circle-down"></i>{" "}
-              <span> Projects</span>
+              <span>Projects</span>
+              <br />
+              <i className="fas fa-arrow-circle-down"></i>
             </button>
           </div>
         </div>

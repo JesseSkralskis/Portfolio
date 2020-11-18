@@ -13,9 +13,9 @@ const plProps = {
 
   seeCodeUrl: "https://github.com/JesseSkralskis/PlaylistBuilder",
   viewurl: "https://silly-wescoff-4d18fa.netlify.app/",
-  buttonColor: "#1d062d",
-  headerColor: "#1d062d",
-  photo: "/images/plCollage.png",
+  buttonColor: "#000000",
+  headerColor: "#5f5f5f",
+  photo: "/images/plCollageBlack.png",
   buttonHeight: "10",
 };
 
