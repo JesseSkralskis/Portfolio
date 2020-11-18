@@ -46,6 +46,7 @@ export default function Project({
               <button
                 style={{
                   background: `${buttonColor}`,
+                  outline: "none",
                 }}
                 className="project__view"
               >
@@ -59,6 +60,7 @@ export default function Project({
                 onClick={show}
                 style={{
                   background: `${buttonColor}`,
+                  outline: "none",
                 }}
                 className="project__view"
               >
@@ -71,6 +73,7 @@ export default function Project({
               <button
                 style={{
                   background: `${buttonColor}`,
+                  outline: "none",
                 }}
                 className="project__view"
               >
