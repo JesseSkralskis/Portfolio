@@ -24,7 +24,7 @@ const treadProps = {
     "App Store Connect",
     "Git",
   ],
-  seeCodeUrl: "https://github.com/JesseSkralskis/TreadTrackApi",
+  seeCodeUrl: "https://github.com/JesseSkralskis/TreadTrack",
   viewurl: "#",
   buttonColor: "#000000",
   headerColor: "#5f5f5f",
